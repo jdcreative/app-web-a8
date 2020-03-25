@@ -1,0 +1,42 @@
+<div *ngIf="isSlctImgBck" class="modal is-active">
+    <div class="modal-background"></div>
+    <div class="modal-content" style="width:450px">
+        <div class="box">
+            <h4 style="text-align: center; font-size: 16px;">Please Upload document only in 'png', 'jpeg', 'jpg' format
+            </h4>
+            <div class="box">
+                <label class="file-label labelBtnSlct">
+                    <input class="file-input" type="file" id="file-input" accept="image/*"
+                        (change)="getImgLocal($event)">                   
+
+                    <span class="file-cta">
+                        <span class="file-icon">
+                            <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                            Choose a file…
+                        </span>
+                    </span>
+                </label>
+                <hr>
+                <!-- <div class="img-container">
+                    <image-cropper                     
+                    [imageChangedEvent]="urlFile" 
+                    [maintainAspectRatio]="true"
+                    [aspectRatio]="4 / 3" format="png" 
+                    (imageCropped)="imageCropped($event)"                
+                    ></image-cropper>
+                    <img [src]="urlFile" style="width: 400px;">
+                </div> -->
+                <div class="img-container">
+                    <img [src]="urlFile ? urlFile : ulrImg" style="width: 400px;">
+                </div>
+                <hr>
+                <div class="butons">
+                    <button class="button btnS is-danger" type="button">Save changes</button>
+                    <button class="button btnS is-danger is-light" (click)="SlctImg(false)">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

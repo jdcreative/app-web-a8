@@ -1,0 +1,45 @@
+.allNav{
+    min-height: 2.25rem;
+    background: whitesmoke;
+    height: 46px;
+}
+.startNav{
+    align-items: center;    
+    margin-left: auto;
+    margin-right: 0;
+}
+.imgdivNav, .searchdivNav{
+    padding: 0 10px;
+}
+.navbar-link:not(.is-arrowless)::after{border-color: black;}
+.searchInput{
+    width: 19.5em;
+    height: 2em;    
+}
+.endNav{
+    display: flex;
+    margin-right: auto;
+    margin-left: 0;
+    align-items: center;
+}
+.itemNav{
+    border-right: 1px solid #dbdbdb;
+    font-size: 14px;
+    height: 25px;
+}
+.itemNav:hover{
+    background-color: whitesmoke;
+    color: #363636;
+}
+.itemNavImg{
+    font-size: 14px;
+    height: 25px;
+}
+.iconsNav{
+    width: 15px;
+    font-weight: bold;
+    margin: 0 8px;
+}
+.imgNav{
+    margin-right: 10px;
+}

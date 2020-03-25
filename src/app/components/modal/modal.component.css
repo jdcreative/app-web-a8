@@ -1,0 +1,13 @@
+
+.butons, .labelBtnSlct{
+    display: flex;
+    justify-content: center;
+}
+.btnS{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .backCanvas{
+    cursor: move;
+    
+} */

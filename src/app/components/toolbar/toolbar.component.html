@@ -1,0 +1,82 @@
+<nav class="navbar allNav" role="navigation" aria-label="main navigation">
+    <div id="navbarBasicExample" class="navbar-menu">
+        <!-- start -->
+        <div class="navbar-start startNav">
+            <div class="navbar-brand imgdivNav">
+                <a class="navbar-item">
+                    <img src="../../../assets/log/logo1024x1024.png">
+                    <img src="../../../assets/log/stereotheque_logo.png">
+                </a>
+            </div>
+            <div class="searchdivNav field">
+                <p class="control has-icons-left">
+                    <input class="input is-rounded is-danger searchInput" type="text" placeholder="Search">
+                    <span class="icon is-small is-left">
+                        <img src="../../../assets/iconsSVG/Asset 25.svg" alt="Search" width="17"> 
+                        <!-- <i class="fas fa-search"></i> -->
+                    </span>
+                </p>
+            </div>
+        </div>
+        <!-- end -->
+        <div class="navbar-end endNav">
+            <a class="navbar-item itemNav">
+                <!-- <i class="fas fa-home iconsNav"></i> -->
+                <img class="iconsNav" src="../../../assets/iconsSVG/Asset 15.svg" alt="home">
+                Home
+            </a>
+
+            <a class="navbar-item itemNav">
+                <!-- <i class="fas fa-chart-bar iconsNav"></i> -->
+                <img class="iconsNav" src="../../../assets/iconsSVG/Asset 6.svg" alt="opportunities">
+                Opportunities
+            </a>
+
+            <a class="navbar-item itemNav">
+                <img class="iconsNav" src="../../../assets/iconsSVG/Asset 32.svg" alt="connections">
+                <!-- <i class="fas fa-users iconsNav"></i> -->
+                connections
+            </a>
+
+            <div class="navbar-item dropdown-trigger is-hoverable">
+                <a class="navbar-link  itemNav">
+                    <img class="iconsNav" src="../../../assets/iconsSVG/Asset 3.svg" alt="Notifications">
+                    <!-- <i class="fas fa-bell iconsNav"></i> -->
+                    Notifications
+                </a>
+                <div class="navbar-dropdown ">
+                    <a href="" class="navbar-item">xx</a>
+                </div>
+            </div>
+            
+            <div class="navbar-item dropdown-trigger is-hoverable">
+                <a class="navbar-link itemNavImg">
+                    <figure class="image is-24x24 imgNav">
+                        <img class="is-rounded" src="../../../assets/profile-demo/images.jfif">                    
+                    </figure>                    
+                    user
+                </a>
+
+                <div class="navbar-dropdown is-right">
+                    <a class="navbar-item" (click)="home()">
+                        <img class="iconsNav" src="../../../assets/iconsSVG/Asset 31.svg" alt="profile">
+                        <!-- <i class="fas fa-user iconsNav"></i> -->
+                        View profile
+                    </a>
+                    <a class="navbar-item" (click)="settingUser()">
+                        <img class="iconsNav" src="../../../assets/iconsSVG/Asset 26.svg" alt="Settings">
+                        <!-- <i class="fas fa-cog iconsNav"></i> -->
+                        Settings
+                    </a>
+                    <a class="navbar-item" (click)="logout()">
+                        <img class="iconsNav" src="../../../assets/iconsSVG/Asset 19.svg" alt="Logout">
+                        <!-- <i class="fas fa-window-close iconsNav"></i> -->
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- <app-banner></app-banner> -->
