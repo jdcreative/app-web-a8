@@ -4,7 +4,10 @@
     justify-content: center;
 }
 .btnS{
+    font-family: 'GothamBold';
+    font-size: 15px;
     border-radius: 20px;
+    padding: 0 29px;
 }
-
-
+.modalUpload{text-align: center; font-size: 16px; font-family: 'GothamLight';}
+.file-label{font-family: 'GothamBold'; font-size: 12px;}

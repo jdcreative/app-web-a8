@@ -1,3 +1,4 @@
+
 .allNav{
     min-height: 2.25rem;
     background: whitesmoke;
@@ -13,8 +14,9 @@
 }
 .navbar-link:not(.is-arrowless)::after{border-color: black;}
 .searchInput{
-    width: 19.5em;
-    height: 2em;    
+    font-family: 'GothamBold';
+    font-size: 12px;    
+    width: 290px;   
 }
 .endNav{
     display: flex;
@@ -23,8 +25,9 @@
     align-items: center;
 }
 .itemNav{
+    font-family: 'GothamBold';
     border-right: 1px solid #dbdbdb;
-    font-size: 14px;
+    font-size: 12px;
     height: 25px;
 }
 .itemNav:hover{
@@ -32,8 +35,14 @@
     color: #363636;
 }
 .itemNavImg{
+    font-family: 'GothamBold';
     font-size: 14px;
     height: 25px;
+    font-size: 12px;
+}
+.itemUser{
+    font-family: 'GothamBold';
+    font-size: 12px;
 }
 .iconsNav{
     width: 15px;

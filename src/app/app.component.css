@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('https://s3.amazonaws.com/cdn.strtqe.com/admin/fonts/Gotham-Medium.otf');
+}
+@font-face {
+    font-family: 'GothamBold';
+    src: url('https://s3.amazonaws.com/cdn.strtqe.com/admin/fonts/Gotham-Bold.otf');
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url('https://s3.amazonaws.com/cdn.strtqe.com/admin/fonts/Gotham-Light.otf');
+}
+@font-face {
+    font-family: 'GothamUltra';
+    src: url('https://s3.amazonaws.com/cdn.strtqe.com/admin/fonts/Gotham-Ultra.otf');
+}
+@font-face {
+    font-family: 'GothamBlack';
+    src: url('https://s3.amazonaws.com/cdn.stereotheque.com/fonts/Gotham-Black.otf');
+}
