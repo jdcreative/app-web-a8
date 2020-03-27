@@ -9,9 +9,9 @@
                     <input class="file-input" type="file" id="file-input" accept="image/*"
                         (change)="getImgLocal($event)">                   
 
-                    <span class="file-cta">
+                    <span class="file-cta btnS">
                         <span class="file-icon">
-                            <i class="fas fa-upload"></i>
+                            <img src="../../../assets/iconsSVG/Asset 9.svg">
                         </span>
                         <span class="file-label">
                             Choose a file…
@@ -19,22 +19,22 @@
                     </span>
                 </label>
                 <hr>
-                <!-- <div class="img-container">
-                    <image-cropper                     
+                <div class="img-container">
+                    <image-cropper                                        
                     [imageChangedEvent]="urlFile" 
                     [maintainAspectRatio]="true"
-                    [aspectRatio]="4 / 3" format="png" 
-                    (imageCropped)="imageCropped($event)"                
-                    ></image-cropper>
-                    <img [src]="urlFile" style="width: 400px;">
-                </div> -->
-                <div class="img-container">
-                    <img [src]="urlFile ? urlFile : ulrImg" style="width: 400px;">
+                    [aspectRatio]="4 / 1.5" format="png"                   
+                    [hideResizeSquares]="true"                                        
+                    (imageCropped)="imageCropped($event)"            
+                    >
+                </image-cropper>                    
                 </div>
+                <!-- <div class="img-container">
+                    <img [src]="croppedImage ? croppedImage: ulrImg">
+                </div> -->
                 <hr>
                 <div class="butons">
-                    <button class="button btnS is-danger" type="button">Save changes</button>
-                    <button class="button btnS is-danger is-light" (click)="SlctImg(false)">Cancel</button>
+                    <button class="button btnS is-danger"(click)="SlctImg(false)">Close</button>                    
                 </div>
             </div>
         </div>

@@ -1,6 +1,5 @@
 <!-- gradient and text -->
-<section class="hero  hbodyBack">
-    <!-- <img class="imgBack" src="../../../assets/profile-demo/descarga.jfif"> -->
+<section class="hero  hbodyBack">    
     <div class="hero-body">
         <div class="container contBack">
             <h1 class="tit">
@@ -15,34 +14,20 @@
                     ciudad, Ct
                 </p>
             </div>
-        </div>
-        <div>
-            <a class="iconChange" (click)="changePaint(1)">
-                <img src="../../../assets/iconsSVG/pintar.svg" width="25">
-            </a>
-        </div>
-        <!-- <div>
-            <a class="imgChangeUser" (click)="changePaint(2)">
-                <img src="../../../assets/iconsSVG/pintar.svg" width="25">
-            </a>
-        </div> -->
+        </div>        
     </div>
 </section>
 <!-- image back user -->
-<section class="hero heroBackUser" [ngClass]="bkcSet()">
+<section>
+    <img class="heroBackUser" [src]="ulrImg" alt="">
 </section>
 <div class="hero boxProfileUser">
     <img src="{{imgUser}}" class="imgUserProfile">
 </div>
 
-<div *ngIf="ischangePaint" class="box boxModalPaint">
-    <div (click)="Bck(1)" class="boxColor1"></div>
-    <div (click)="Bck(2)" class="boxColor2"></div>
-    <div (click)="Bck(3)" class="boxColor3"></div>
-    <div (click)="Bck(4)" class="boxColor4"></div>
-    <div (click)="SlctImg()"><img class="slctImg" src="../../../assets/iconsSVG/dslr.svg"></div>
+<div class="boxModalPaint" (click)="SlctImg()">
+    <img class="slctImg" src="../../../assets/iconsSVG/dslr.svg">
 </div>
-<app-modal 
-[isSlctImgBck]="isSlctImgBck"
-[isSlctImgUser]="isSlctImgUser"
-></app-modal>
+<app-action-bar></app-action-bar>
+
+<app-modal [isSlctImgBck]="isSlctImgBck" [isSlctImgUser]="isSlctImgUser"></app-modal>

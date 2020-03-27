@@ -6,7 +6,8 @@ import { SettingsComponent } from './components/settings/settings.component';
 
 const routes:Routes=[
     // {path:'', component: ToolbarComponent},
-    {path: 'profiles', component:ProfilesComponent},
+    {path: '', component:ProfilesComponent},
+    {path: 'profiles', component: ProfilesComponent},
     {path:'settings', component: SettingsComponent}
 ];
 @NgModule({

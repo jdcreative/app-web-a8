@@ -1,13 +1,10 @@
 /* gradient and text */
-.hbodyBack{
-    background: rgba(110,101,99,1);
-    background: -moz-linear-gradient(left, rgba(110,101,99,1) 0%, rgba(5,5,5,1) 0%, rgba(5,5,5,0.17) 46%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(110,101,99,1)), color-stop(0%, rgba(5,5,5,1)), color-stop(46%, rgba(5,5,5,0.17)));
-    background: -webkit-linear-gradient(left, rgba(110,101,99,1) 0%, rgba(5,5,5,1) 0%, rgba(5,5,5,0.17) 46%);
-    background: -o-linear-gradient(left, rgba(110,101,99,1) 0%, rgba(5,5,5,1) 0%, rgba(5,5,5,0.17) 46%);
-    background: -ms-linear-gradient(left, rgba(110,101,99,1) 0%, rgba(5,5,5,1) 0%, rgba(5,5,5,0.17) 46%);
-    background: linear-gradient(to right, rgba(110,101,99,1) 0%, rgba(5,5,5,1) 0%, rgba(5,5,5,0.17) 46%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e6563', endColorstr='#050505', GradientType=1 );       
+.hbodyBack{    
+    background: -moz-linear-gradient(left, rgba(110,101,99,1) 0%, rgba(5,5,5,0.7) 0%, rgba(5,5,5,0.17) 46%);    
+    background: -webkit-linear-gradient(left, rgba(110,101,99,1) 0%, rgba(5,5,5,0.7) 0%, rgba(5,5,5,0.17) 46%);
+    background: -o-linear-gradient(left, rgba(110,101,99,1) 0%, rgba(5,5,5,0.7) 0%, rgba(5,5,5,0.17) 46%);
+    background: -ms-linear-gradient(left, rgba(110,101,99,1) 0%, rgba(5,5,5,0.7) 0%, rgba(5,5,5,0.17) 46%);
+    background: linear-gradient(to right, rgba(110,101,99,1) 0%, rgba(5,5,5,0.7) 0%, rgba(5,5,5,0.17) 46%);    
     height: 330px;
     z-index: 10;
 }
@@ -48,7 +45,7 @@
 /* image back user */
 
 .heroBackUser{
-    height: 330px;
+    height: 346px;
     z-index: -1;
     position: absolute;
     top: 45px;
@@ -72,16 +69,9 @@
 /* modal Paint */
 
 .boxModalPaint{
-    width: 137px;
-    height: 26px;
-    background: rgba(0,0,0,0);
     position: absolute;
-    top: 326px;
-    left: 56px;
-    display: flex;
-    padding: 0;
-    align-items: center;
-    justify-content: center;    
+    top: 328px;
+    left: 16px;    
 }
 .boxColor1, .boxColor2, .boxColor3, .boxColor4{    
     width: 20px;

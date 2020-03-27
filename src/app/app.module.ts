@@ -13,6 +13,7 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { appRoutingModule } from './app-routing.module';
 import { ProfilesComponent } from './components/profiles/profiles.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { ActionBarComponent } from './components/action-bar/action-bar.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ModalComponent } from './components/modal/modal.component';
     BannerComponent,
     SettingsComponent,
     ProfilesComponent,
-    ModalComponent
+    ModalComponent,
+    ActionBarComponent
   ],
   imports: [
     FormsModule,
