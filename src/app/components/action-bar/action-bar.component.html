@@ -1,5 +1,5 @@
 <!-- firs actionBar -->
-<div class="level levelActionbar">
+<div *ngIf="aBComplete" class="level levelActionbar">
     <!-- left -->
     <div class="level-left">
         <div class="level-item" style="margin: 0 20px 0 65px;">
@@ -48,7 +48,7 @@
 </div>
 
 <!-- second actionBar -->
-<div class="level levelActionbar">
+<div  *ngIf="aBEditMode" class="level levelActionbar">
     <!-- left -->
     <div>
         <div class="levelLeft">
@@ -80,7 +80,7 @@
 </div>
 
 <!-- third actionBar -->
-<div class="level levelActionbar">
+<div *ngIf="aBNotConn" class="level levelActionbar">
     <div class="level-left">
         <div class="level-item" style="margin: 0 20px 0 65px;">
             <p class="parrafStarsActionbar">22 complete projects</p>
@@ -117,7 +117,7 @@
 </div>
 
 <!-- quarter actionBar -->
-<div class="level levelActionbar">
+<div *ngIf="aBConn" class="level levelActionbar">
     <div class="level-left">
         <div class="level-item" style="margin: 0 20px 0 65px;">
             <p class="parrafStarsActionbar">22 complete projects</p>

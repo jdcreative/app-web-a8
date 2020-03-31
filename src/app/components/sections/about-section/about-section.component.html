@@ -1,0 +1,41 @@
+<div style="margin: 5px;">
+    <div class="abouts">
+        <h3 class="titles">About</h3>        
+        <p class="aboutParraf" [class.show]="show">
+            {{(show) ? text:text | slice:0:225}}
+            <span *ngIf="!show">...</span>
+            <button class="btnShow" (click)="show = !show">{{show ?'Show less':'Show more'}}</button>
+        </p>        
+    </div>
+    <div class="hablities">
+        <h3 class="titles">Industry</h3>
+        <a class="btn button">
+            <span>{{industry}}</span>
+            <span *ngIf="editMode" class="imghblties">
+                <img src="../../../../assets/iconsSVG/arrow-down.svg" width="10">
+            </span>
+        </a>
+        <h3 class="titles">Focus</h3>
+        <a class="btn button">
+            <span>{{focus}}</span>
+            <span *ngIf="editMode" class="imghblties">
+                <img src="../../../../assets/iconsSVG/arrow-down.svg" width="10">
+            </span>
+        </a>
+    </div>
+    <div class="skills">
+        <h3 class="titles">Skills</h3>
+        <div class="tags">
+            <span class="tag is-light">Ableton
+                <button *ngIf="editMode" class="delete is-small"></button>
+            </span>
+            <span class="tag is-light">Composition
+                <button *ngIf="editMode" class="delete is-small"></button>
+            </span>
+            <span class="tag is-light">Bass
+                <button *ngIf="editMode" class="delete is-small"></button>
+            </span>
+            <span *ngIf="editMode" class="moreSkills" (click)="seeMoreskills()">+ Add more skills</span>
+        </div>
+    </div>
+</div>

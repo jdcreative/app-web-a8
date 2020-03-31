@@ -4,7 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ImageCropperModule } from 'ngx-image-cropper';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
@@ -14,6 +15,9 @@ import { appRoutingModule } from './app-routing.module';
 import { ProfilesComponent } from './components/profiles/profiles.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { ActionBarComponent } from './components/action-bar/action-bar.component';
+import { SectionsComponent } from './components/sections/sections.component';
+import { AboutSectionComponent } from './components/sections/about-section/about-section.component';
+import { ProfileBoxesComponent } from './components/sections/profile-boxes/profile-boxes.component';
 
 
 @NgModule({
@@ -24,7 +28,10 @@ import { ActionBarComponent } from './components/action-bar/action-bar.component
     SettingsComponent,
     ProfilesComponent,
     ModalComponent,
-    ActionBarComponent
+    ActionBarComponent,
+    SectionsComponent,
+    AboutSectionComponent,
+    ProfileBoxesComponent
   ],
   imports: [
     FormsModule,
@@ -33,7 +40,8 @@ import { ActionBarComponent } from './components/action-bar/action-bar.component
     BrowserAnimationsModule,
     RouterModule,
     appRoutingModule,
-    ImageCropperModule
+    ImageCropperModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
