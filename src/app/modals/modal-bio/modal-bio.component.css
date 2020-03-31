@@ -1,0 +1,16 @@
+.butons{
+    display: flex;
+    justify-content: center;
+}
+.btnS{
+    font-family: 'GothamBold';
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0 29px;
+}
+.modalUpload{
+    font-size: 14px; 
+    font-family: 'GothamMedium';
+    outline: none;
+    border: none;
+}

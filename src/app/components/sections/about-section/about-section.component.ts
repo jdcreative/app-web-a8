@@ -14,6 +14,7 @@ export class AboutSectionComponent implements OnInit {
   laboriosam asperiore`;
 
   show = false;
+  isBio = false;
   industry:string='Businnes & Mngmt';
   focus:string='Event Producer';
   editMode:boolean= false;
@@ -24,4 +25,7 @@ export class AboutSectionComponent implements OnInit {
   }
 
   seeMoreskills(){}
+  openModalbio(){
+    this.isBio=!this.isBio;
+  }
 }

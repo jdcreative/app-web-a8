@@ -1,10 +1,11 @@
 .cont{
     display: flex; margin: 30px 60px;
 }
-.section1{
-    width:67%; margin-right: 20px; border-radius: 2px; box-shadow: 0 0 5px 0 rgba(0,0,0,0.8);
-    
+.about{
+    width: 95%;
+    margin-right: 15px;
 }
-.section2{
-    width: 30%; margin-left: 20px; border-radius: 2px; box-shadow: 0 0 5px 0 rgba(0,0,0,0.8);
+.profile{
+    width: 39%;
+    margin-left: 15px;
 }

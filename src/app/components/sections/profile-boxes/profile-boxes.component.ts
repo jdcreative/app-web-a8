@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileBoxesComponent implements OnInit {
 
+  unit:any;
+  gear:any='Gretsch Brooklyn Micro Kit';
+  Manufacturer:any;
+  isEditEdu:boolean=false;
+  isEditAffltn:boolean=false;
+  isEditGear:boolean=false;
   constructor() { }
 
   ngOnInit() {
   }
+  searchGear(){
+    this.isEditGear=!this.isEditGear;
+  };
+  searchAffiliation(){
+    this.isEditAffltn=!this.isEditAffltn;
+  };
+  searchEducation(){
+    this.isEditEdu=!this.isEditEdu;
+  };
 
 }

@@ -4,11 +4,11 @@ import { ImageCroppedEvent } from 'ngx-image-cropper';
 import { UploadBack } from '../../services/upload-back.service';
 
 @Component({
-  selector: 'app-modal',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  selector: 'app-modalback',
+  templateUrl: './modalback.component.html',
+  styleUrls: ['./modalback.component.css']
 })
-export class ModalComponent implements OnInit {
+export class ModalbackComponent implements OnInit {
 
 
   @Input() isSlctImgBck: boolean

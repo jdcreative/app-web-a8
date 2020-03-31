@@ -1,7 +1,7 @@
-<div style="margin: 5px;">
+<div class="box section1">
     <div class="abouts">
         <h3 class="titles">About</h3>        
-        <p class="aboutParraf" [class.show]="show">
+        <p class="aboutParraf" [class.show]="show" (click)="openModalbio()">
             {{(show) ? text:text | slice:0:225}}
             <span *ngIf="!show">...</span>
             <button class="btnShow" (click)="show = !show">{{show ?'Show less':'Show more'}}</button>
@@ -39,3 +39,4 @@
         </div>
     </div>
 </div>
+<app-modal-bio [isBio]="isBio"></app-modal-bio>
