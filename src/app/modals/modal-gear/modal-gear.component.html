@@ -1,0 +1,32 @@
+<div *ngIf="isAddnewgear" class="modal is-active">
+    <div class="modal-background" (click)="closeModal(false)"></div>
+    <div class="modal-content" style="width:450px">
+        <div class="box ">
+            <h3 class="headModal">Create Item</h3>
+            <div class="box boxbody">
+                <form (ngSubmit)="newGear($event)">
+
+
+                    <input type="text" class="input" id="gear" name="gear"[(ngModel)]="gear">
+                    <label for="gear" class="lavels">Gear or Software Name <span class="spanX">*</span></label>
+
+
+                    <input type="text" class="input">
+                    <label for="" class="lavels">URL <span class="spanX">*</span></label>
+
+                    <input type="text" class="input">
+                    <label for="" class="lavels">Manufacturer <span class="spanX">*</span></label>
+
+                    <hr>
+                    <div class="butons">
+                        <button type="submit" value="submit" class="button btnS is-danger"
+                         >ADD</button>                            
+                    </div>
+                </form>
+                <div>
+                    <p style="font-size: 8px; color:red">{{err}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

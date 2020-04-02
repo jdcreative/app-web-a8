@@ -1,0 +1,50 @@
+.headModal{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'GothamMedium';
+}
+.boxbody{
+    display: block;
+}
+.input{
+    /* margin-bottom: 30px; */
+    margin-top:18px;
+    background: transparent;
+    z-index: 1;  
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.43);
+    border: black;
+}
+.spanX{
+    color:red
+}
+input:focus{
+    box-shadow: 0px 1px 1px 0px rgba(210,36,77,1);
+}
+.input:focus + .lavels{
+    top:-63px
+}
+.lavels{
+    padding-left: 15px;
+    position: relative;
+    top: -30px;
+    transition: all 0.2s;
+}
+.butons{
+    display: flex;
+    justify-content: center;
+}
+.btnS{
+    font-family: 'GothamBold';
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0 29px;
+}
+.modalUpload{
+    font-size: 14px; 
+    font-family: 'GothamMedium';
+    outline: none;
+    border: none;
+}

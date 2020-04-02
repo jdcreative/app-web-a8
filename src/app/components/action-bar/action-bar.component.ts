@@ -20,16 +20,16 @@ export class ActionBarComponent implements OnInit {
   userType() {
     if (this.avatar == 'A') {
       this.aBComplete = true;
-      console.log(this.aBComplete);
+      // console.log(this.aBComplete);
     } else if (this.avatar == 'B') {
       this.aBEditMode = true;
-      console.log(this.aBEditMode);
+      // console.log(this.aBEditMode);
     } else if (this.avatar == 'C') {
       this.aBNotConn = true;
-      console.log(this.aBNotConn);
+      // console.log(this.aBNotConn);
     } else {
       this.aBConn = true;
-      console.log(this.aBConn);
+      // console.log(this.aBConn);
     }
   }
 

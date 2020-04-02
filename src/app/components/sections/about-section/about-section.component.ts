@@ -15,8 +15,15 @@ export class AboutSectionComponent implements OnInit {
 
   show = false;
   isBio = false;
+  isSkills = false;
+  //industry
   industry:string='Businnes & Mngmt';
+  industries:any[]=['Live Entertainment','Artist & Djs', 'Business & Mngmt'];
+  industrySlcted:any;
+  //focus
   focus:string='Event Producer';
+  focucing:any[]=['Audio Enginnering','Instrument Tech', 'State Manager & Roadle'];
+  focusSlcted:any;
   editMode:boolean= false;
   
   constructor() { }
@@ -24,8 +31,15 @@ export class AboutSectionComponent implements OnInit {
   ngOnInit() {
   }
 
-  seeMoreskills(){}
+  
+  editAbout(){
+    this.editMode=!this.editMode
+  }
   openModalbio(){
-    this.isBio=!this.isBio;
+    if(this.editMode==true)
+    {this.isBio=!this.isBio;}
+  }
+  seeMoreskills(){
+    this.isSkills=!this.isSkills
   }
 }

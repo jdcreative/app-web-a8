@@ -7,7 +7,7 @@
   <div class="card-content">
     <div class="cardBody">
       <span class="tag is-light">Frontend Angular
-        <!-- <button class="delete is-small"></button> -->
+        <button *ngIf="isEditServ" class="delete is-small"></button>
       </span>
       <div>
         <div class="cardPrice">
@@ -22,11 +22,15 @@
       </select> -->      
     </div>
     <hr>
+    <div *ngIf="isEditServ" class="btnAddnew">
+      <button class="button btn">ADD NEW SERVICE</button>
+    </div>
     <div style="display:flex">
       <span class="footerCard">What services/products you have to offer</span>
-      <span class="spanPenCard">
+      <span *ngIf="!isEditServ" (click)="searchService()" class="spanPenCard">
         <img class="penCard" src="../../../../assets/iconsSVG/lapiz .svg">
-      </span> 
+      </span>
+      <button *ngIf="isEditServ" class="delete is-small" (click)="searchService()"></button> 
     </div>
   </div>
 </div>
@@ -45,13 +49,17 @@
         <button *ngIf="isEditGear" class="delete is-small"></button>
       </span>
     </div>
-    <input *ngIf="isEditGear" class="inputSearch" type="search" placeholder="Search for Gear">
+    <!-- <input *ngIf="isEditGear" class="inputSearch" type="search" placeholder="Search for Gear"> -->
     <hr>
+    <div *ngIf="isEditGear" class="btnAddnew">
+      <button class="button btn" (click)="addNewGear()">ADD NEW GEAR</button>
+    </div>
     <div style="display:flex">
       <span class="footerCard">Hardware and Software you work with</span>
-      <span class="spanPenCard" (click)="searchGear()">
+      <span *ngIf="!isEditGear" class="spanPenCard" (click)="searchGear()">
         <img class="penCard" src="../../../../assets/iconsSVG/lapiz .svg">
       </span> 
+      <button *ngIf="isEditGear" class="delete is-small" (click)="searchGear()"></button>
     </div>
   </div>
 
@@ -71,13 +79,17 @@
         <button *ngIf="isEditAffltn" class="delete is-small"></button>
       </span>
     </div>
-    <input *ngIf="isEditAffltn" class="inputSearch" type="search" placeholder="Search for an Affiliation">
+    <!-- <input *ngIf="isEditAffltn" class="inputSearch" type="search" placeholder="Search for an Affiliation"> -->
     <hr>
+    <div  *ngIf="isEditAffltn" class="btnAddnew">
+      <button class="button btn" (click)="addNewAffltn()">ADD NEW AFFILIATION</button>
+    </div>
     <div style="display:flex">
       <span class="footerCard">Companies/Orgs you work(ed) with/for</span>
-      <span class="spanPenCard" (click)="searchAffiliation()">
+      <span *ngIf="!isEditAffltn" class="spanPenCard" (click)="searchAffiliation()">
         <img class="penCard" src="../../../../assets/iconsSVG/lapiz .svg">
       </span>      
+      <button *ngIf="isEditAffltn" class="delete is-small" (click)="searchAffiliation()"></button>
     </div>
   </div>
 </div>
@@ -96,13 +108,20 @@
         <button *ngIf="isEditEdu" class="delete is-small"></button>
       </span>
     </div>
-    <input *ngIf="isEditEdu" class="inputSearch" type="search" placeholder="Add where you went to School">
+    <!-- <input *ngIf="isEditEdu" class="inputSearch" type="search" placeholder="Add where you went to School"> -->
     <hr>
+    <div *ngIf="isEditEdu" class="btnAddnew">
+      <button class="button btn" (click)="addNewedu()">ADD NEW EDUCATION</button>
+    </div>
     <div style="display:flex">
       <span class="footerCard">Where did you learn your skills?</span>
-      <span class="spanPenCard" (click)="searchEducation()">
+      <span *ngIf="!isEditEdu" class="spanPenCard" (click)="searchEducation()">
         <img class="penCard" src="../../../../assets/iconsSVG/lapiz .svg">
       </span> 
+      <button *ngIf="isEditEdu" class="delete is-small" (click)="searchEducation()"></button>
     </div>
   </div>
 </div>
+<app-modal-gear [isAddnewgear]="isAddnewgear"></app-modal-gear>
+<app-modal-affiliations [isAddnewaffltn]="isAddnewaffltn"></app-modal-affiliations>
+<app-modal-education [isAddnewedu]="isAddnewedu"></app-modal-education>

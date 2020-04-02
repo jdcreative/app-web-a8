@@ -22,6 +22,10 @@ import { ProfileBoxesComponent } from './components/sections/profile-boxes/profi
 //modals
 import { ModalbackComponent } from './modals/modal-back/modalback.component';
 import { ModalBioComponent } from './modals/modal-bio/modal-bio.component';
+import { ModalSkillsComponent } from './modals/modal-skills/modal-skills.component';
+import { ModalAffiliationsComponent } from './modals/modal-affiliations/modal-affiliations.component';
+import { ModalEducationComponent } from './modals/modal-education/modal-education.component';
+import { ModalGearComponent } from './modals/modal-gear/modal-gear.component';
 
 
 @NgModule({
@@ -36,7 +40,11 @@ import { ModalBioComponent } from './modals/modal-bio/modal-bio.component';
     SectionsComponent,
     AboutSectionComponent,
     ProfileBoxesComponent,
-    ModalBioComponent
+    ModalBioComponent,
+    ModalSkillsComponent,
+    ModalAffiliationsComponent,
+    ModalEducationComponent,
+    ModalGearComponent
   ],
   imports: [
     FormsModule,

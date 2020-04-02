@@ -46,6 +46,19 @@
     margin-left: auto;
     margin-right: auto
 }
+.btnAddnew{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.btn{
+    font-family: 'GothamMedium';
+    font-size: 12px;
+    background: #D2244D;
+    color: white;    
+    height: 36px;
+    border-radius: 20px;
+}
 .penCard{
     width: 15px;    
 }

@@ -15,7 +15,7 @@ export class BannerComponent implements OnInit {
   isSlctImgBck: boolean = false;
   isSlctImgUser: boolean = false;
   isUserTipe:any;
-  
+  iseditBanner:boolean=false
   ulrImg: any = '../../assets/profile-demo/BckDefect.jpg';
   imgUser: any = '../../assets/profile-demo/profile.jfif';
   

@@ -10,21 +10,41 @@ export class ProfileBoxesComponent implements OnInit {
   unit:any;
   gear:any='Gretsch Brooklyn Micro Kit';
   Manufacturer:any;
+  //edit in target
+  isEditServ:boolean=false;
   isEditEdu:boolean=false;
   isEditAffltn:boolean=false;
   isEditGear:boolean=false;
+  //modals
+  isAddnewgear:boolean=false;
+  isAddnewaffltn:boolean=false;
+  isAddnewedu:boolean=false;
   constructor() { }
 
   ngOnInit() {
   }
+  //edit in target
+  searchService(){
+    this.isEditServ=!this.isEditServ;
+  }
   searchGear(){
     this.isEditGear=!this.isEditGear;
-  };
+  };  
   searchAffiliation(){
     this.isEditAffltn=!this.isEditAffltn;
   };
   searchEducation(){
     this.isEditEdu=!this.isEditEdu;
   };
+  //modals
+  addNewGear(){
+    this.isAddnewgear=!this.isAddnewgear;
+  }
+  addNewAffltn(){
+    this.isAddnewaffltn=!this.isAddnewaffltn;
+  }
+  addNewedu(){
+    this.isAddnewedu=!this.isAddnewedu;
+  }
 
 }

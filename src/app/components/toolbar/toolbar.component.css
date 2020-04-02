@@ -24,6 +24,21 @@
     margin-left: 0;
     align-items: center;
 }
+.notify{
+    background: #D2244D;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 13px;
+    right: 139px;
+    z-index: 2;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .itemNav{
     font-family: 'GothamBold';
     border-right: 1px solid #dbdbdb;
