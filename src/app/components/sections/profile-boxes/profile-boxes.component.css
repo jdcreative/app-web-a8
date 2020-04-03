@@ -60,7 +60,8 @@
     border-radius: 20px;
 }
 .penCard{
-    width: 15px;    
+    width: 15px;
+    cursor: pointer;    
 }
 hr{margin-top: 5px;}
 /* gears */

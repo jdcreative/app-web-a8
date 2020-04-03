@@ -1,13 +1,26 @@
 <div *ngIf="isAddnewaffltn" class="modal is-active">
-    <div class="modal-background"></div>
+    <div class="modal-background" (click)="closeModal(false)"></div>
     <div class="modal-content" style="width:450px">
         <div class="box">
-            <div class="box">
-                <form>
+            <h3 class="headModal">Create Item</h3>
+            <div class="box bodybox">
+                <form [formGroup]="formAffltn" (ngSubmit)="newAffltn($event)"  novalidate>
+
+                    <input class="input" type="text" formControlName="isORG">
+                    <label for="" class="lavels" [ngStyle]="orgStyle()">Organization Name<span class="stco">*</span></label>
+
+                    <input class="input" type="text" formControlName="isWebsite">
+                    <label for="" class="lavels" [ngStyle]="webStyle()">Website<span class="stco">*</span></label>    
+                    
+                    <select class="selectElmnt" formControlName="isType">                        
+                        <option *ngFor="let item of typeAffltn" [value]="item">{{item}}</option>
+                    </select>
+                    <label for="" class="lavelSlct" [ngStyle]="typeStyle()">Select a type<span class="stco">*</span></label>
 
                     <hr>
                     <div class="butons">
-                        <button class="button btnS is-danger" (click)="closeModal(false)">SAVE</button>
+                        <button type="submit" class="button btnS is-danger" value="submit" 
+                        [disabled]="formAffltn.invalid">ADD</button>
                     </div>
                 </form>
             </div>

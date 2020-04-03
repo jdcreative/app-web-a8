@@ -12,6 +12,7 @@
 }
 .penCard{
     width: 15px;    
+    cursor: pointer;
 }
 .abouts, .hablities, .skills{
     margin-bottom: 20px;

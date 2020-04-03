@@ -4,28 +4,41 @@
         <div class="box ">
             <h3 class="headModal">Create Item</h3>
             <div class="box boxbody">
-                <form (ngSubmit)="newGear($event)">
+                <form [formGroup]="formGear" (ngSubmit)="newGear($event)" novalidate>
+
+                    <input type="text" class="input" formControlName="isGear">
+                    <label for="gear" class="lavels" [ngStyle]="styleGear()">Gear or Software Name <span class="stco">*</span></label>
+                    <div class="alert"
+                        *ngIf="gear.invalid && (gear.dirty || gear.touched)">
+                        <p *ngIf="gear.hasError('required')">Fiel is required</p>
+                        <p *ngIf="gear.hasError('minlength')">Min of 5 characters</p>
+                    </div>
 
 
-                    <input type="text" class="input" id="gear" name="gear"[(ngModel)]="gear">
-                    <label for="gear" class="lavels">Gear or Software Name <span class="spanX">*</span></label>
+                    <input type="text" class="input" formControlName="isUrl">
+                    <label for="" class="lavels" [ngStyle]="styleUrl()">URL <span class="stco">*</span></label>
+                    <div class="alert"
+                        *ngIf="url.invalid && (url.dirty || url.touched)">
+                        <p *ngIf="url.hasError('required')">Fiel is required</p>
+                        <p *ngIf="url.hasError('pattern')">Url is invalid</p>
+                        <p *ngIf="url.hasError('minlength')">Min of 5 characters</p>  
+                    </div>
 
 
-                    <input type="text" class="input">
-                    <label for="" class="lavels">URL <span class="spanX">*</span></label>
-
-                    <input type="text" class="input">
-                    <label for="" class="lavels">Manufacturer <span class="spanX">*</span></label>
+                    <input type="text" class="input" formControlName="isManufacturer">
+                    <label for="" class="lavels" [ngStyle]="styleMan()">Manufacturer <span class="stco">*</span></label>
+                    <div class="alert"
+                        *ngIf="manufacturer.invalid && (manufacturer.dirty || manufacturer.touched)">
+                        <p *ngIf="manufacturer.hasError('required')">Fiel is required</p>
+                        <p *ngIf="manufacturer.hasError('minlength')">Min of 2 characters</p>                        
+                    </div>
 
                     <hr>
                     <div class="butons">
-                        <button type="submit" value="submit" class="button btnS is-danger"
-                         >ADD</button>                            
+                        <button type="submit" value="submit" [disabled]="formGear.invalid"
+                            class="button btnS is-danger">ADD</button>
                     </div>
-                </form>
-                <div>
-                    <p style="font-size: 8px; color:red">{{err}}</p>
-                </div>
+                </form>                
             </div>
         </div>
     </div>

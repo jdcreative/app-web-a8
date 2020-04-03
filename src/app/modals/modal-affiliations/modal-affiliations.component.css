@@ -1,3 +1,55 @@
+.headModal{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'GothamMedium';
+}
+.bodybox{
+    display: block;
+}
+.input{
+    margin-top:18px;
+    background: transparent;
+    z-index: 1;  
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.43);
+    border: black;
+}
+input:focus{
+    box-shadow: 0px 1px 1px 0px rgba(210,36,77,1);
+}
+.input:focus + .lavels{
+    top:-63px
+}
+.lavels{
+    padding-left: 15px;
+    position: relative;
+    top: -30px;
+    transition: all 0.2s;
+}
+.stco{color:#D2244D}
+.selectElmnt{
+    width: 100%;
+    border: 2px solid #828282;
+    border-radius: 20px;
+    padding:10px;
+    margin-top: 40px;
+    font-family: 'GothamMedium';
+    font-size: 14px;
+    color: #4F4F4F;
+    cursor: inherit;
+    outline: none;
+}
+.selectElmnt:focus + .lavelSlct{
+    top:-65px
+}
+.lavelSlct{
+    position: relative;
+    top: -32px;
+    left: 15px;
+    transition: all 0.2s;
+}
 .butons{
     display: flex;
     justify-content: center;
