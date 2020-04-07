@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { resetFakeAsyncZone } from '@angular/core/testing';
+
 // import { setTimeout } from 'timers';
 
 @Component({
@@ -13,7 +13,7 @@ export class ModalGearComponent implements OnInit {
 @Input() isAddnewgear: boolean;
   formGear: FormGroup;
   err: string;
-  sPattern: any = /[a-z0-9-\.]+\.[a-z]{2,4}\/?([^\s<>\#%"\,\{\}\\|\\\^\[\]`]+)?$/;;
+  sPattern: any = /[a-z0-9-\.]+\.[a-z]{2,4}\/?([^\s<>\#%"\,\{\}\\|\\\^\[\]`]+)?$/;
   
   //styles
   gearstyle:boolean=false;
@@ -50,7 +50,7 @@ export class ModalGearComponent implements OnInit {
     event.preventDefault();
     if (this.formGear.valid) {
       const dataform = this.formGear.value;
-      console.log('formulario lleno: ', dataform);
+      // console.log('formulario lleno: ', dataform);
     }
     this.closeModal(false);
   }

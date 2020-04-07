@@ -9,3 +9,6 @@
     width: 39%;
     margin-left: 15px;
 }
+@media screen and (max-width:900px){
+    .cont{display: block;}
+}

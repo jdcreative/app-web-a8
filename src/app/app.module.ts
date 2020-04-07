@@ -26,6 +26,8 @@ import { ModalSkillsComponent } from './modals/modal-skills/modal-skills.compone
 import { ModalAffiliationsComponent } from './modals/modal-affiliations/modal-affiliations.component';
 import { ModalEducationComponent } from './modals/modal-education/modal-education.component';
 import { ModalGearComponent } from './modals/modal-gear/modal-gear.component';
+import { ModalServicesComponent } from './modals/modal-services/modal-services.component';
+
 
 
 @NgModule({
@@ -44,7 +46,8 @@ import { ModalGearComponent } from './modals/modal-gear/modal-gear.component';
     ModalSkillsComponent,
     ModalAffiliationsComponent,
     ModalEducationComponent,
-    ModalGearComponent
+    ModalGearComponent,
+    ModalServicesComponent,    
   ],
   imports: [
     FormsModule,

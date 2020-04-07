@@ -9,7 +9,9 @@ import { Router } from '@angular/router'
 })
 export class ToolbarComponent implements OnInit {
 
-  
+  dropDownUser: boolean = false;
+  dropDownNotify: boolean = false;
+  dropDownMenu: boolean = false;
   constructor(
     public router:Router
   ) { }
@@ -30,4 +32,18 @@ export class ToolbarComponent implements OnInit {
     // },1000);
   }
 
+
+
+  drpNotify(){
+    this.dropDownNotify=!this.dropDownNotify;
+  }
+  drpUser(){
+    this.dropDownUser=!this.dropDownUser;
+    // setTimeout(() => {
+    //   this.dropDownUser=false;
+    // }, 1000);
+  }
+  drpMenu(){
+    this.dropDownMenu=!this.dropDownMenu;    
+  }
 }

@@ -1,50 +1,93 @@
 .levelActionbar{
-    background: white; height: 70px; box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    display: flex;
+    background: white; 
+    height: 70px; 
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
 }
 .btnsActionbar{
-    font-family: 'GothamBold'; font-size: 14px; 
-    margin: 5px; padding: 7px; background:white;
-    border: 1px solid #D2244D; border-radius: 30px; display: flex;
+    font-family: 'GothamBold'; 
+    font-size: 14px; 
+    margin: 5px; 
+    padding: 7px; 
+    background:white;
+    border: 1px solid #D2244D; 
+    border-radius: 30px; 
+    display: flex;
     padding: 0;
 }
 .iconBtnActionbar{
-    background-color: #D2244D; border-radius: 20px;width: 40px;
-    height: 40px; display: flex;
+    background-color: #D2244D; 
+    border-radius: 20px;
+    width: 40px;
+    height: 40px; 
+    display: flex;
 }
 .imgBtnActionbar{
-    margin-left: auto; margin-right: auto; width: 22px;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 22px;
 }
 .imgBtnEditP{
-    margin-left: auto; margin-right: -4px; width: 17px;
+    margin-left: auto; 
+    margin-right: -4px; 
+    width: 17px;
 }
 .textBtnActionbar{
-    font-family: 'GothamBold'; font-size: 14px;
-    display: flex; align-items: center; margin: 0 13px;color:#D2244D
+    font-family: 'GothamBold'; 
+    font-size: 14px;
+    display: flex; 
+    align-items: center; 
+    margin: 0 13px;
+    color:#D2244D
 }
 
 .btnEditP{
-    margin: 5px; padding: 7px; background:#E5E5E5; border-radius: 30px; 
-    display: flex; padding: 8px 21px;;
+    margin: 5px; 
+    padding: 7px; 
+    background:#E5E5E5; 
+    border-radius: 30px; 
+    display: flex; 
+    padding: 8px 21px;;
 }
 .textBtnEditP{
-    font-family: 'GothamBold'; font-size: 14px;
-    display: flex; align-items: center; margin: 0 8px; color:#626262; font-size: 14px;
+    font-family: 'GothamBold'; 
+    font-size: 14px;
+    display: flex; 
+    align-items: center; 
+    margin: 0 8px; 
+    color:#626262; 
+    font-size: 14px;
 }
 .imgbtnEditP{display: flex;}
 
 /* second actionBar */
-.levelActionbar{display: flex;}
-.levelLeft{display: flex;padding: 15px;}
-.actionbarPorcent{display: flex; margin: -16px 60px 0 60px;}
-.actionbarAddInfo{margin: -16px 50px;}
-.parrafActionbar{font-weight: bold; font-size: 14px; font-family:'GothamBold';}
-.imgProgress{
-    margin-top: -2px;margin-left: 4px; position: absolute;
+
+.levelLeft{display: flex;
+    padding: 15px;}
+.actionbarPorcent{
+    display: flex; 
+    margin: -16px 60px 0 60px;
 }
-.progress{margin-top: -4px; margin-left: 60px;}
+.actionbarAddInfo{margin: -16px 50px;}
+.parrafActionbar{
+    font-weight: bold; 
+    font-size: 14px; 
+    font-family:'GothamBold';}
+.imgProgress{
+    margin-top: -2px;
+    margin-left: 4px; 
+    position: absolute;
+}
+.progress{
+    margin-top: -4px;
+     margin-left: 60px;
+    }
 
 .levelright{
-    display: flex; position: absolute; right: 40px;padding: 15px;
+    display: flex; 
+    position: absolute; 
+    right: 40px;
+    padding: 15px;
 }
 .item-redes{margin: 0 20px; width: 22px;}
 .divActionbarbtn{margin: 0 10px;}
@@ -55,7 +98,9 @@
     height: 20px;
 }
 .progressActionbar[value]::-webkit-progress-bar{
-    background-color: #eee; border-radius: 10px; height: 15px;
+    background-color: #eee; 
+    border-radius: 10px; 
+    height: 15px;
 }
 .progressActionbar[value]::-webkit-progress-value{
     background: linear-gradient(to right, rgba(254,95,133,1) 0%, rgba(210,36,77,1) 100%);
@@ -63,40 +108,114 @@
     height: 15px;
 }
 .btnCancelActionbar{
-    font-family: 'GothamBold'; font-size: 13px; height: 36px;
-    border-radius: 20px; padding: 0 55px; border: 3px solid #BDBDBD; color: #595959;
+    font-family: 'GothamBold'; 
+    font-size: 13px; 
+    height: 36px;
+    border-radius: 20px; 
+    padding: 0 55px; 
+    border: 3px solid #BDBDBD; 
+    color: #595959;
 }
 .btnSaveActionbar{
-    font-family: 'GothamBold'; font-size: 13px; height: 36px;
-    border-radius: 20px; padding: 0 29px; background: #BDBDBD;color: #595959;
+    font-family: 'GothamBold'; 
+    font-size: 13px; 
+    height: 36px;
+    border-radius: 20px; 
+    padding: 0 29px; 
+    background: #BDBDBD;
+    color: #595959;
 }
 
 /* third actionBar */
 .conectActionbar{
-    display: flex; align-items: center; margin: 0 8px; color:white; font-size: 14px;
-    font-family: 'GothamBold'; font-size: 14px;
+    display: flex; 
+    align-items: center; 
+    margin: 0 8px; 
+    color:white; 
+    font-size: 14px;
+    font-family: 'GothamBold'; 
+    font-size: 14px;
 }
+.paraffConnect{margin: 0 20px 0 65px;}
+.itemStar{margin: 0 45px;}
+.itemConnect{margin: 0 60px 0 70px;}
 .btnConnectActionbar{
-    margin: 5px; padding: 7px; background:#D2244D; border-radius: 30px; 
-    display: flex; padding: 8px 21px;;
+    margin: 5px; 
+    padding: 7px; 
+    background:#D2244D; 
+    border-radius: 30px; 
+    display: flex; 
+    padding: 8px 21px;;
 }
 .starReviewsActionbar{margin-right: 5px;}
-.parrafStarsActionbar{color: #D2244D; font-family: 'GothamMedium'; font-size: 14px;}
+.parrafStarsActionbar{
+    color: #D2244D; 
+    font-family: 'GothamMedium'; 
+    font-size: 14px;
+}
 
 /* quarter actionBar */
+.itemUnfollow{margin: 0 60px 0 12px;}
 .btnnfollowActionbar{
-    margin: 5px; padding: 7px; background:#828282; border-radius: 30px; 
-    display: flex; padding: 8px 21px; font-family: 'GothamBold'; font-size: 14px;
+    margin: 5px; 
+    padding: 7px; 
+    background:#828282; 
+    border-radius: 30px; 
+    display: flex; 
+    padding: 8px 21px; 
+    font-family: 'GothamBold'; 
+    font-size: 14px;
 }
 .unfollowActionbar{
-    display: flex; align-items: center; margin: 0 8px;color:white; font-size: 14px;
+    display: flex; 
+    align-items: center; 
+    margin: 0 8px;
+    color:white; 
+    font-size: 14px;
 }
 .notificationActionbar{
-    background: #00CF00; width: 15px; height: 15px; border-radius: 10px;
-    margin-right: -8px; margin-top: 24px; z-index: 2; color: white;
-    display: flex; justify-content: center; font-size: 10px;
+    background: #00CF00;
+     width: 15px; 
+     height: 15px; 
+     border-radius: 10px;
+    margin-right: -8px; 
+    margin-top: 24px; 
+    z-index: 2; 
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    font-size: 10px;
 }
 .messageActionbar{
-    background: #D2244D; width: 40px; height: 40px;
-    border-radius: 20px; padding: 8px;
+    background: #D2244D; 
+    width: 40px; 
+    height: 40px;
+    border-radius: 20px; 
+    padding: 8px;
+}
+
+@media screen and (max-width:950px){
+    .itemConnect{margin: 0 30px 0 20px}
+    .paraffConnect{margin: 0 20px 0 30px;}
+}
+@media screen and (max-width:855px){
+    .itemStar{margin: 0 25px;}
+}
+@media screen and (max-width:855px){
+    .levelActionbar{display: block;}
+    .level-left{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .level-right{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1px;
+    }
+    /* 4 */
+    .itemUnfollow{
+        margin: 0 0 0 12px
+    }
 }

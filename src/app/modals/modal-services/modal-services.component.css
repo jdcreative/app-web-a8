@@ -23,6 +23,14 @@ input:focus{
 .input:focus + .lavels{
     top:-63px
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.currency{
+    text-transform: uppercase;
+}
 .lavels{
     padding-left: 15px;
     position: relative;
@@ -30,6 +38,28 @@ input:focus{
     transition: all 0.2s;
 }
 .stco{color:#D2244D}
+.selectElmnt{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4F4F4F;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 21px;
+    font-family: 'GothamMedium';
+    font-size: 14px;
+    color: #4F4F4F;
+    cursor: inherit;
+    outline: none;
+}
+.selectElmnt:focus + .lavelSlct{
+    top:-65px
+}
+.lavelSlct{
+    position: relative;
+    top: -32px;
+    left: 15px;
+    transition: all 0.2s;
+}
 .alert{
     color:rgba(210,36,77,1);
     margin-top: -25px;

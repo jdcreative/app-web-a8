@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileBoxesComponent implements OnInit {
 
-  unit:any;
+  units:any[]=['/ hour','/ day','/ song','/ project'];
+  currency:any[]=['USD','COP','MEX','EUR','CAD','GBP'];
   gear:any='Gretsch Brooklyn Micro Kit';
   Manufacturer:any;
   //edit in target
@@ -19,6 +20,7 @@ export class ProfileBoxesComponent implements OnInit {
   isAddnewgear:boolean=false;
   isAddnewaffltn:boolean=false;
   isAddnewedu:boolean=false;
+  isAddservices:boolean=false; 
   constructor() { }
 
   ngOnInit() {
@@ -37,6 +39,9 @@ export class ProfileBoxesComponent implements OnInit {
     this.isEditEdu=!this.isEditEdu;
   };
   //modals
+  addNewService(){
+    this.isAddservices=!this.isAddservices;
+  }
   addNewGear(){
     this.isAddnewgear=!this.isAddnewgear;
   }
@@ -46,5 +51,4 @@ export class ProfileBoxesComponent implements OnInit {
   addNewedu(){
     this.isAddnewedu=!this.isAddnewedu;
   }
-
 }

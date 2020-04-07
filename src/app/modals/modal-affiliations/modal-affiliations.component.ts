@@ -25,7 +25,7 @@ export class ModalAffiliationsComponent implements OnInit {
   public buildForm(){
     this.formAffltn = this.fb.group({
       isORG: ['', [Validators.required, Validators.minLength(3)]],
-      isWebsite: ['', [Validators.required, Validators.pattern(this.sPattern)]],
+      isWebsite: ['', [Validators.required, Validators.pattern(this.sPattern), Validators.minLength(5)]],
       isType: ['', [Validators.required]]
     });
     this.formAffltn.valueChanges.subscribe(res =>{
@@ -38,16 +38,17 @@ export class ModalAffiliationsComponent implements OnInit {
     })
   };
 
-  get org(){return this.formAffltn.get('org')};
-  get website(){return this.formAffltn.get('wensite')};
-  get type(){return this.formAffltn.get('type')};
+  get org(){return this.formAffltn.get('isORG')};
+  get website(){return this.formAffltn.get('isWebsite')};
+  get type(){return this.formAffltn.get('isType')};
 
   newAffltn(event: Event){
     event.preventDefault();
     if(this.formAffltn.valid){
       const dataForm = this.formAffltn.value;
-      console.log('formulario :',dataForm);
+      // console.log('formulario :',dataForm);
     }
+    this.closeModal(false);
   };
   orgStyle(){
     let style={'top': this.styleorg ? '-63px' :'', }
@@ -63,6 +64,7 @@ export class ModalAffiliationsComponent implements OnInit {
   };
   closeModal(e){
     this.isAddnewaffltn=e;
+    this.formAffltn.reset();
   }
 
 }

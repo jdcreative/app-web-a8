@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionBarComponent implements OnInit {
 
-  avatar: any = ' ';
+  avatar: any = '';
   aBComplete: boolean = false;
   aBEditMode: boolean = false;
   aBNotConn: boolean = false;

@@ -9,7 +9,7 @@
         </div>
 
         <p class="aboutParraf" [class.show]="show" (click)="openModalbio()">
-            {{(show) ? text:text | slice:0:225}}
+            {{(show) ? text:text | slice:0:250}}
             <span *ngIf="!show">...</span>
             <button class="btnShow" (click)="show = !show">{{show ?'Show less':'Show more'}}</button>
         </p>

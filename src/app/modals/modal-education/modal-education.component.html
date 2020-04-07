@@ -3,17 +3,28 @@
     <div class="modal-content" style="width:450px">
         <div class="box"><h3 class="headModal">Create Item</h3>
             <div class="box bodybox">
-                <form>
+                <form [formGroup]="formEdu" (ngSubmit)="newEdu($event)">
 
-                    <input class="input" type="text">
-                    <label for="" class="lavels">Organization Name<span class="stco">*</span></label>
+                    <input class="input" type="text" formControlName="isOrg">
+                    <label [ngStyle]="styleOrg()" class="lavels">Organization Name<span class="stco">*</span></label>
+                    <div class="alert"
+                    *ngIf="org.invalid && (org.dirty || org.touched)">
+                        <p *ngIf="org.hasError('required')">Fiel is required</p>
+                        <p *ngIf="org.hasError('minlength')">Min of 3 characters</p>
+                    </div>
 
-                    <input class="input" type="text">
-                    <label for="" class="lavels">Website<span class="stco">*</span></label>    
+                    <input class="input" type="text" formControlName="isWebsite">
+                    <label [ngStyle]="styleWeb()" class="lavels">Website<span class="stco">*</span></label>    
+                    <div class="alert"
+                    *ngIf="website.invalid && (website.dirty || website.touched)">
+                        <p *ngIf="website.hasError('required')">Fiel is required</p>
+                        <p *ngIf="website.hasError('minlength')">Min of 3 characters</p>
+                        <p *ngIf="website.hasError('pattern')">Url is invalid</p>
+                    </div>
                                     
                     <hr>
                     <div class="butons">
-                        <button class="button btnS is-danger">ADD</button>
+                        <button type="submit" class="button btnS is-danger" [disabled]="formEdu.invalid" value="submit">ADD</button>
                     </div>
                 </form>
             </div>

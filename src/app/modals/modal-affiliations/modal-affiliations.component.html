@@ -8,14 +8,29 @@
 
                     <input class="input" type="text" formControlName="isORG">
                     <label for="" class="lavels" [ngStyle]="orgStyle()">Organization Name<span class="stco">*</span></label>
+                    <div class="alert" 
+                    *ngIf="org.invalid && (org.touched || org.dirty)">
+                        <p *ngIf="org.hasError('required')">Fiel is required</p>
+                        <p *ngIf="org.hasError('minlength')">Min of 3 characters</p>
+                    </div>
 
                     <input class="input" type="text" formControlName="isWebsite">
                     <label for="" class="lavels" [ngStyle]="webStyle()">Website<span class="stco">*</span></label>    
+                    <div class="alert" 
+                    *ngIf="website.invalid && (website.touched || website.dirty)">
+                        <p *ngIf="website.hasError('required')">Fiel is required</p>
+                        <p *ngIf="website.hasError('minlength')">Min of 5 characters</p>
+                        <p *ngIf="website.hasError('pattern')">Url is invalid</p>
+                    </div>
                     
                     <select class="selectElmnt" formControlName="isType">                        
                         <option *ngFor="let item of typeAffltn" [value]="item">{{item}}</option>
                     </select>
                     <label for="" class="lavelSlct" [ngStyle]="typeStyle()">Select a type<span class="stco">*</span></label>
+                    <div class="alert" 
+                    *ngIf="type.invalid && (type.touched || type.dirty)">
+                        <p *ngIf="type.hasError('required')">Fiel is required</p>                        
+                    </div>
 
                     <hr>
                     <div class="butons">

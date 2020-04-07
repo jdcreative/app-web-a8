@@ -1,3 +1,4 @@
+.box{border-radius: 4px;}
 .headModal{
     text-align: center;
     font-size: 18px;
@@ -49,6 +50,10 @@ input:focus{
     top: -32px;
     left: 15px;
     transition: all 0.2s;
+}
+.alert{
+    color:rgba(210,36,77,1);
+    margin-top: -25px;
 }
 .butons{
     display: flex;

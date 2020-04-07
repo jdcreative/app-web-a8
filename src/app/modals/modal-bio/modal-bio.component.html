@@ -1,14 +1,18 @@
 <div *ngIf="isBio" class="modal is-active">
-    <div class="modal-background"></div>
+    <div class="modal-background" (click)="closeModal(false)"></div>
     <div class="modal-content" style="width:450px">
         <div class="box">
-            <div class="box">
-                <form>
+            <div class="box">                
+                <form [formGroup]="formBio" (ngSubmit)="newBio($event)">
                     <textarea class="textarea modalUpload" placeholder="Include your new bio here"
-                        [(ngModel)]="text"></textarea>
+                    formControlName="isbio"></textarea>
+                    <div class="alert" *ngIf="bio.invalid && (bio.touched || bio.dirty)">
+                        <p *ngIf="bio.hasError('minlength')">Min of 20 characters</p>
+                    </div>
                     <hr>
                     <div class="butons">
-                        <button class="button btnS is-danger" (click)="closeModal(false)">SAVE</button>
+                        <button type="submit" class="button btnS is-danger" [disabled]="formBio.invalid"
+                         value="submit">SAVE</button>
                     </div>
                 </form>
             </div>

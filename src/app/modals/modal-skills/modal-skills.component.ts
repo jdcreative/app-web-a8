@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ModalSkillsComponent implements OnInit {
 
   @Input() isSkills:boolean;
+  skills:any[]=['Fron-end Angular','Javascript','Firebase','Back-End NodeJS','Elemento4','Elemento5',]
   constructor() { }
 
   ngOnInit() {

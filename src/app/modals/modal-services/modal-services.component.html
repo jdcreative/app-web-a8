@@ -1,0 +1,60 @@
+<div *ngIf="isAddservices" class="modal is-active">
+    <div class="modal-background" (click)="closeModal(false)"></div>
+    <div class="modal-content" style="width:450px">
+        <div class="box">
+            <h3 class="headModal">Create Item</h3>
+            <div class="box bodybox">
+                <form [formGroup]="formServ" (ngSubmit)="newServ($event)">
+
+                    <input class="input" type="text" formControlName="isServiceName">
+                    <label [ngStyle]="styleServ()" class="lavels">Service Name<span class="stco">*</span></label>
+                    <div class="alert" *ngIf="service.invalid && (service.touched || service.dirty)">
+                        <p *ngIf="service.hasError('required')">Fiel is required</p>
+                        <p *ngIf="service.hasError('minlength')">Min of 3 characters</p>
+                    </div>
+
+                    <input class="input" type="text" formControlName="isDescription">
+                    <label [ngStyle]="styleDesc()" class="lavels">Description<span class="stco">*</span></label>
+                    <div class="alert" *ngIf="description.invalid && (description.touched || description.dirty)">
+                        <p *ngIf="description.hasError('required')">Fiel is required</p>
+                        <p *ngIf="description.hasError('minlength')">Min of 5 characters</p>
+                    </div>
+
+                    <div style="display: flex;">
+                        <div>
+                            <input class="input" type="number" formControlName="isPrice" pattern="-?[0-9]*(\.[0-9]+)?">
+                            <label [ngStyle]="stylePrice()" class="lavels">Price<span class="stco">*</span></label>
+                            <div class="alert" *ngIf="price.invalid && (price.touched || price.dirty)">
+                                <p *ngIf="price.hasError('required')">Fiel is required</p>
+                                <p *ngIf="price.hasError('minlength')">Min of 1 characters</p>
+                            </div>
+                        </div>
+                        <div>
+                            <select class="selectElmnt" formControlName="isCurrency">
+                                <option *ngFor="let curr of currs" [value]="curr">{{curr}}</option>
+                            </select>
+                            <label [ngStyle]="styleCurrs()" class="lavelSlct">Currency<span class="stco">*</span></label>
+                            <div class="alert" *ngIf="currency.invalid && (currency.touched || currency.dirty)">
+                                <p *ngIf="currency.hasError('required')">Fiel is required</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <select class="selectElmnt" formControlName="isUnit">
+                        <option *ngFor="let unit of units" [value]="unit">{{unit}}</option>
+                    </select>
+                    <label [ngStyle]="styleUnit()" class="lavelSlct">Unit<span class="stco">*</span></label>
+                    <div class="alert" *ngIf="unit.invalid && (unit.touched || unit.dirty)">
+                        <p *ngIf="unit.hasError('required')">Fiel is required</p>
+                    </div>
+
+                    <hr>
+                    <div class="butons">
+                        <button type="submit" class="button btnS is-danger" [disabled]="this.formServ.invalid"
+                            value="submit">ADD</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

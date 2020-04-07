@@ -1,4 +1,4 @@
-
+.box{border-radius: 4px;}
 .butons, .labelBtnSlct{
     display: flex;
     justify-content: center;

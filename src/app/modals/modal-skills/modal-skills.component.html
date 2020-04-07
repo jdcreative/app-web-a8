@@ -1,13 +1,20 @@
 <div *ngIf="isSkills" class="modal is-active">
-    <div class="modal-background"></div>
-    <div class="modal-content" style="width:450px">
+    <div class="modal-background"  (click)="closeModal(false)"></div>
+    <div class="modal-content" style="width:420px">
         <div class="box">
+            <h3  class="headModal">Skills</h3>
             <div class="box">
                 <form>
-                    
+                    <input type="text" class="input" placeholder="Search for Skills">                
+                    <hr>
+                    <div  class="tags">
+                        <span *ngFor="let elem of skills" class="tag is-light">{{elem}}
+                            <button class="delete is-small"></button>
+                        </span>                        
+                    </div>
                     <hr>
                     <div class="butons">
-                        <button class="button btnS is-danger" (click)="closeModal(false)">SAVE</button>
+                        <button class="button btnS is-danger">SAVE</button>
                     </div>
                 </form>
             </div>

@@ -1,5 +1,5 @@
 <div *ngIf="isSlctImgBck" class="modal is-active">
-    <div class="modal-background"></div>
+    <div class="modal-background" (click)="SlctImg(false)"></div>
     <div class="modal-content" style="width:450px">
         <div class="box">
             <h4 class="modalUpload">Please Upload document only in 'png', 'jpeg', 'jpg' format
@@ -34,7 +34,7 @@
                 </div> -->
                 <hr>
                 <div class="butons">
-                    <button class="button btnS is-danger"(click)="SlctImg(false)">CLOSE</button>                    
+                    <button class="button btnS is-danger" (click)="SlctImg(false)">CLOSE</button>                    
                 </div>
             </div>
         </div>
