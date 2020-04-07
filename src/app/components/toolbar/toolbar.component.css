@@ -1,28 +1,82 @@
 
-.allNav{
-    min-height: 2.25rem;
+
+.level{
+    height: 57px;
+    box-shadow: 0 0 5px 0 rgba(0, 0,0,0.7);
     background: whitesmoke;
-    height: 46px;
-}
-.startNav{
-    align-items: center;    
-    margin-left: auto;
-    margin-right: 0;
-}
-.imgdivNav, .searchdivNav{
-    padding: 0 10px;
-}
-.navbar-link:not(.is-arrowless)::after{border-color: black;}
-.searchInput{
-    font-family: 'GothamBold';
-    font-size: 12px;    
-    width: 290px;   
-}
-.endNav{
     display: flex;
-    margin-right: auto;
-    margin-left: 0;
+}
+/* level-left */
+.level-left{
+    margin-left: 70px;
+    display: flex;
+}
+.logs{
+    display: flex;
     align-items: center;
+}
+.control{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px;
+}
+.searchInput{
+    font-family: 'GothamMedium';
+    font-size: 12px;    
+    width: 300px;   
+}
+
+/* level rigth */
+/* level right desktop */
+.level-right{
+    margin-right: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.right-list{
+    display:flex;
+}
+.itemNav{
+    font-family: 'GothamMedium';
+    border-right: 1px solid #dbdbdb;
+    font-size: 12px;    
+    width: 127px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    color: black;
+}
+.itemNav:hover{
+    background-color: whitesmoke;
+    color: #363636;
+}
+.iconsNav, .iconsMenu{
+    width: 15px;
+    font-weight: bold;
+    margin: 0 8px;
+}
+.button{
+    border:none;
+    border-right: 1px solid #dbdbdb;
+    border-radius: 0;  
+    background: whitesmoke;  
+    font-family: 'GothamMedium';
+    font-size: 12px;
+    height: 40px;
+}
+.button:focus:not(:active){
+    box-shadow: none;
+}
+.btnProfile{
+    border:none !important;
+}
+.perfil{
+    width: 27px !important;
+    border-radius: 12px;
+}
+.btnArrow{
+    display: flex;
 }
 .notify{
     background: #D2244D;
@@ -30,8 +84,8 @@
     height: 15px;
     border-radius: 10px;
     position: absolute;
-    top: 13px;
-    right: 139px;
+    top: 8px;
+    right: 108px;
     z-index: 2;
     color: white;
     font-size: 11px;
@@ -39,31 +93,55 @@
     align-items: center;
     justify-content: center;
 }
-.itemNav{
-    font-family: 'GothamBold';
-    border-right: 1px solid #dbdbdb;
-    font-size: 12px;
-    height: 25px;
+
+/* level right movil */
+.right-icons{
+    display: none;
+    align-items: center;
 }
-.itemNav:hover{
-    background-color: whitesmoke;
-    color: #363636;
+.itemIcons{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: #D2244D;
+    margin: 0 11px 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.itemNavImg{
-    font-family: 'GothamBold';
-    font-size: 14px;
-    height: 25px;
-    font-size: 12px;
+.btnMenu{
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border-radius: 20px;
+    background: #D2244D; 
 }
-.itemUser{
-    font-family: 'GothamBold';
-    font-size: 12px;
+
+@media screen and (max-width: 1227px){
+    .control{margin-left: 10px;}
+    .level-left{margin-left: 20px;}
+    .level-right{margin-right: 20px;}
 }
-.iconsNav{
-    width: 15px;
-    font-weight: bold;
-    margin: 0 8px;
+@media screen and (max-width:1155px){
+    .searchInput{width: 250px;}
 }
-.imgNav{
-    margin-right: 10px;
+@media screen and (max-width:1113px){
+    .control{margin-left: 20px;}
+    .right-list{display: none;}
+    .right-icons{display: flex;}
+}
+@media screen and (max-width:634px){
+    .company{display: none;}
+}
+@media screen and (max-width:481px){
+    .control{margin-left: 10px;}
+    .level-left{margin-left: 10px;}
+    .level-right{margin-right: 10px;}
+    .searchInput{width: 200px;}
+}
+@media screen and (max-width:377px){
+    .searchInput{width: 165px;}
+}
+@media screen and (max-width:333px){
+    .searchInput{width: 130px;}
 }

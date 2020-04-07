@@ -1,83 +1,112 @@
-<nav class="navbar allNav" role="navigation" aria-label="main navigation">
-    <div id="navbarBasicExample" class="navbar-menu">
-        <!-- start -->
-        <div class="navbar-start startNav">
-            <div class="navbar-brand imgdivNav">
-                <a class="navbar-item">
-                    <img src="../../../assets/log/logo1024x1024.png">
-                    <img src="../../../assets/log/stereotheque_logo.png">
+<div>
+    <div class="level">
+      <div class="level-left">
+        <a class="logs">
+          <img src="../../../assets/log/logo1024x1024.png" width="26">
+          <img class="company" src="../../../assets/log/stereotheque_logo.png">
+        </a>
+        <a class="control has-icons-left">
+          <input class="input is-rounded is-danger searchInput" type="text" placeholder="Search">
+          <span class="icon is-small is-left">
+            <img src="../../../assets/iconsSVG/Asset 25.svg" style="margin-top: -9px;" alt="Search" width="17">
+          </span>
+        </a>
+      </div>
+      <div class="level-right ">
+        <div class="right-list">
+          <a class="itemNav">
+            <img class="iconsNav" src="../../../assets/iconsSVG/home-01.svg" >
+            Home
+          </a>
+          <a class="itemNav">
+            <img class="iconsNav" src="../../../assets/iconsSVG/noun_cc.svg" >
+            Opportunities
+          </a>
+          <a class="itemNav">
+            <img class="iconsNav" src="../../../assets/iconsSVG/people-01.svg" >
+            Connections
+          </a>
+          <div class="dropdown" [ngClass]="{'is-active': dropDownNotify}">
+            <div class="dropdown-trigger">
+              <div>
+                <div class="notify">1</div>
+              </div>
+              <button class="button" (click)="drpNotify()">
+                <img class="iconsNav" src="../../../assets/iconsSVG/notify-01.svg" >
+                Notifications
+              </button>
+            </div>
+            <div class="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown is-right" [ngClass]="{ 'is-active': dropDownUser }">
+            <div class="dropdown-trigger">
+              <button class="button btnProfile" (click)="drpUser()">
+                <img class="iconsNav perfil" src="../../../assets/profile-demo/images.jfif" >
+                <span class="btnArrow"> user
+                    <img style="margin-left: 10px;" src="../../../assets/iconsSVG/arrow-down.svg" width="10">
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a class="dropdown-item"  (click)="home()">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/Asset 31.svg" >
+                  View profile
                 </a>
+                <a href="#" class="dropdown-item" (click)="settingUser()">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/Asset 26.svg">
+                  Settings
+                </a>
+                <a href="#" class="dropdown-item" (click)="logout()">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/Asset 19.svg">
+                  Logout
+                </a>
+              </div>
             </div>
-            <div class="searchdivNav field">
-                <p class="control has-icons-left">
-                    <input class="input is-rounded is-danger searchInput" type="text" placeholder="Search">
-                    <span class="icon is-small is-left">
-                        <img src="../../../assets/iconsSVG/Asset 25.svg" style="margin-top: -9px;" alt="Search" width="17"> 
-                        <!-- <i class="fas fa-search"></i> -->
-                    </span>
-                </p>
-            </div>
+          </div>
         </div>
-        <!-- end -->
-        <div class="navbar-end endNav">
-            <a class="navbar-item itemNav">
-                <!-- <i class="fas fa-home iconsNav"></i> -->
-                <img class="iconsNav" src="../../../assets/iconsSVG/home-01.svg" alt="home">
-                Home
-            </a>
-
-            <a class="navbar-item itemNav">
-                <!-- <i class="fas fa-chart-bar iconsNav"></i> -->
-                <img class="iconsNav" src="../../../assets/iconsSVG/noun_cc.svg" alt="opportunities">
-                Opportunities
-            </a>
-
-            <a class="navbar-item itemNav">
-                <img class="iconsNav" src="../../../assets/iconsSVG/people-01.svg" alt="connections">
-                <!-- <i class="fas fa-users iconsNav"></i> -->
-                Connections
-            </a>
-
-            <div class="navbar-item dropdown-trigger is-hoverable">
-                <div>
-                    <div class="notify">1</div>
-                </div>
-                <a class="navbar-link  itemNav">
-                    <img class="iconsNav" src="../../../assets/iconsSVG/notify-01.svg" alt="Notifications">
-                    <!-- <i class="fas fa-bell iconsNav"></i> -->
-                    Notifications
-                </a>
-                <div class="navbar-dropdown ">
-                    <a href="" class="navbar-item">xx</a>
-                </div>
+        <!--  -->
+        <div class="right-icons">
+          <a class="itemIcons">
+            <img class="iconsNav" src="../../../assets/iconsSVG/notificacion.svg">
+            <div>
+              <div class="notify">1</div>
+            </div>          
+          </a>
+          <a class="itemIcons" 
+          style="background: url('../../../assets/profile-demo/images.jfif');background-size: 35px;">          
+          </a>
+          <div class="dropdown is-right" [ngClass]="{ 'is-active': dropDownMenu }">
+            <div class="dropdown-trigger">
+              <button class="button btnMenu" (click)="drpMenu()">
+                <!-- menu -->
+                <img src="../../../assets/iconsSVG/menu.svg" width="14">
+              </button>
             </div>
-            
-            <div class="navbar-item dropdown-trigger is-hoverable">
-                <a class="navbar-link itemNavImg">
-                    <figure class="image is-24x24 imgNav">
-                        <img class="is-rounded" src="../../../assets/profile-demo/images.jfif">                    
-                    </figure>                    
-                    user
+            <div class="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a class="dropdown-item">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/home-01.svg" >
+                  Home
                 </a>
-
-                <div class="navbar-dropdown is-right">
-                    <a class="navbar-item itemUser" (click)="home()">
-                        <img class="iconsNav" src="../../../assets/iconsSVG/Asset 31.svg" alt="profile">
-                        <!-- <i class="fas fa-user iconsNav"></i> -->
-                        View profile
-                    </a>
-                    <a class="navbar-item itemUser" (click)="settingUser()">
-                        <img class="iconsNav" src="../../../assets/iconsSVG/Asset 26.svg" alt="Settings">
-                        <!-- <i class="fas fa-cog iconsNav"></i> -->
-                        Settings
-                    </a>
-                    <a class="navbar-item itemUser" (click)="logout()">
-                        <img class="iconsNav" src="../../../assets/iconsSVG/Asset 19.svg" alt="Logout">
-                        <!-- <i class="fas fa-window-close iconsNav"></i> -->
-                        Logout
-                    </a>
-                </div>
+                <a class="dropdown-item">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/noun_cc.svg" >
+                  Opportunities
+                </a>
+                <a class="dropdown-item">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/people-01.svg" >
+                  Connections
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>                  
     </div>
-</nav>
+  </div>

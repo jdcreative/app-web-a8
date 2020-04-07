@@ -1,5 +1,8 @@
 .section1{
-    width:98%; margin-right: 20px; border-radius: 2px; box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);    
+    width:98%; 
+    margin-right: 20px; 
+    border-radius: 4px; 
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.3);    
 }
 .titles{
     font-family: 'GothamMedium';
@@ -12,6 +15,7 @@
 }
 .penCard{
     width: 15px;    
+    cursor: pointer;
 }
 .abouts, .hablities, .skills{
     margin-bottom: 20px;
@@ -52,6 +56,7 @@
     color: #4F4F4F;
     cursor: inherit;
     outline: none;
+    background: white;
 }
 .tags{
     margin-top: 6px;
@@ -73,4 +78,16 @@
     margin-left: 5px;
     margin-top: -5px;
     cursor: pointer;
+}
+@media screen and (max-width:1125px){
+    .aboutParraf{height: 56px !important;}
+}
+@media screen and (max-width:1060px){
+    .aboutParraf{height: 70px !important;}
+}
+@media screen and (max-width:910px){
+    .aboutParraf{height: 90px !important;}
+}
+@media screen and (max-width:900px){
+    .aboutParraf{height: 40px !important;}
 }
