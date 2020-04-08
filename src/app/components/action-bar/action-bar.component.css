@@ -2,7 +2,10 @@
     display: flex;
     background: white; 
     height: 70px; 
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);    ;
+}
+.contentbtnAbar{
+    margin: 0 20px 0 65px;
 }
 .btnsActionbar{
     font-family: 'GothamBold'; 
@@ -40,8 +43,9 @@
     margin: 0 13px;
     color:#D2244D
 }
-
-.btnEditP{
+.editPr{margin: 0 60px 0 70px;}
+.editPr2{display: none;}
+.btnEditP, .btnEditP2{
     margin: 5px; 
     padding: 7px; 
     background:#E5E5E5; 
@@ -61,12 +65,18 @@
 .imgbtnEditP{display: flex;}
 
 /* second actionBar */
-
-.levelLeft{display: flex;
-    padding: 15px;}
+.contentInfo{
+    display: block;
+    margin-left: 10px;
+}
+.infoActionbar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}    
 .actionbarPorcent{
     display: flex; 
-    margin: -16px 60px 0 60px;
+    margin: -16px 60px 0 50px;
 }
 .actionbarAddInfo{margin: -16px 50px;}
 .parrafActionbar{
@@ -79,9 +89,10 @@
     position: absolute;
 }
 .progress{
-    margin-top: -4px;
-     margin-left: 60px;
-    }
+    margin-bottom: -7px;
+    display: flex;
+    justify-content: center;
+}
 
 .levelright{
     display: flex; 
@@ -139,7 +150,8 @@
 .paraffConnect{margin: 0 20px 0 65px;}
 .itemStar{margin: 0 45px;}
 .itemConnect{margin: 0 60px 0 70px;}
-.btnConnectActionbar{
+.itemConnect2{display: none;}
+.btnConnectActionbar, .btnConnectActionbar2{
     margin: 5px; 
     padding: 7px; 
     background:#D2244D; 
@@ -155,8 +167,14 @@
 }
 
 /* quarter actionBar */
+.responsiveNotify{
+    display: flex; 
+    justify-content: center;
+}
+.item2{display: none;}
 .itemUnfollow{margin: 0 60px 0 12px;}
-.btnnfollowActionbar{
+.itemUnfollow2{display: none;}
+.btnnfollowActionbar, .btnnfollowActionbar2{
     margin: 5px; 
     padding: 7px; 
     background:#828282; 
@@ -172,6 +190,12 @@
     margin: 0 8px;
     color:white; 
     font-size: 14px;
+}
+.contParrafStar{
+    margin: 0 20px 0 65px;
+}
+.contStarReviews{
+    margin: 0 45px;
 }
 .notificationActionbar{
     background: #00CF00;
@@ -193,16 +217,54 @@
     border-radius: 20px; 
     padding: 8px;
 }
-
+@media screen and (max-width:1050px){
+    /* 2 */
+    .actionbarPorcent{
+        margin: -16px 10px 0 40px;
+    }
+    .actionbarAddInfo{
+        margin: -16px 40px;
+    }
+}
+@media screen and (max-width:975px){
+    /* 2 */
+    .actionbarPorcent{
+        margin: -10px 10px 0 20px;
+    }
+    .actionbarAddInfo{
+        margin: -10px 30px;
+    }
+    .progressActionbar[value]{
+        width: 470px;
+    }
+    .btnCancelActionbar{
+        font-size: 12px;
+        padding: 0 38px;
+    }
+    .btnSaveActionbar{
+        font-size: 12px;
+        padding: 0 20px;
+    }
+}
 @media screen and (max-width:950px){
+    /* 3 */
     .itemConnect{margin: 0 30px 0 20px}
     .paraffConnect{margin: 0 20px 0 30px;}
 }
-@media screen and (max-width:855px){
+@media screen and (max-width:950px){
+    /* 2 */
+    .parrafActionbar{font-size: 12px;}
+}
+@media screen and (max-width:855px){    
+    /* 3 */
     .itemStar{margin: 0 25px;}
 }
 @media screen and (max-width:855px){
-    .levelActionbar{display: block;}
+    .levelActionbar{
+        display: block; 
+        height: auto;
+        padding: 5px 0;
+    }
     .level-left{
         display: flex;
         width: 100%;
@@ -214,8 +276,67 @@
         width: 100%;
         margin-top: 1px;
     }
+    /* 2 */
+    .actionbarAddInfo{
+        margin: 0 30px
+    }
+    .actionbarPorcent{
+        margin: 0 10px 0 20px;
+    }
+    .progress{
+        margin-bottom: 5px;
+    }
     /* 4 */
     .itemUnfollow{
         margin: 0 0 0 12px
+    }
+}
+@media screen and (max-width:673px){
+    /* 1 */
+    .editPr{margin: 0 10px;}
+    /* 2 */    
+    .progressActionbar[value]{
+        width: 414px;
+    }
+}
+@media screen and (max-width:560px){
+    /* 1 */
+    .iconBtnActionbar{
+        width: 32px;
+        height: 32px;
+    }
+    .editPr{display: none;}
+    .editPr2{
+        display: flex;
+        justify-content: center;
+    }
+    .contentbtnAbar{
+        margin: 0 20px 0 -4px;
+    }
+    /* 3 */
+    .itemConnect{display: none;}
+    .itemConnect2{
+        display: flex;
+        justify-content: center;
+    }
+    .btnConnectActionbar2{
+        width: 135px;
+    }
+    /* 4 */
+    .itemUnfollow{display: none;}
+    .itemUnfollow2{
+        display: flex; 
+        justify-content: center;
+    }
+    .btnnfollowActionbar2{
+        width: 150px;
+    }
+    .item{display:none}
+    .item2{display:flex}
+    .contParrafStar{
+        margin: 0 4px 0 14px;
+    }
+    .contStarReviews{
+        margin: 0 14px;
     }
 }

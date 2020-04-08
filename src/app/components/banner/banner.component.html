@@ -22,16 +22,17 @@
     <img class="heroBackUser" [src]="ulrImg" alt="">
 </section>
 <div class="hero boxProfileUser">
-    <img src="{{imgUser}}" class="imgUserProfile">
+    <img [src]="imgUser" class="imgUserProfile">
 </div>
 
 <div class="boxModalPaint" (click)="SlctImg()">
     <img class="slctImg" src="../../../assets/iconsSVG/lapiz-white.svg">
 </div>
-<!-- <div>
-    <button *ngIf="iseditBanner" class="delete is-small" ></button>
-</div> -->
+<div class="PaintProfileUser" (click)="SlctImgPofile()">
+    <img class="slctImg" src="../../../assets/iconsSVG/lapiz-white.svg">
+</div>
 <app-action-bar></app-action-bar>
 <app-sections></app-sections>
 
-<app-modalback [isSlctImgBck]="isSlctImgBck" [isSlctImgUser]="isSlctImgUser"></app-modalback>
+<app-modalback [isSlctImgBck]="isSlctImgBck"></app-modalback>
+<!--  [isSlctImgUser]="isSlctImgUser" -->

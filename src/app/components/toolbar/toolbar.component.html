@@ -47,7 +47,7 @@
           <div class="dropdown is-right" [ngClass]="{ 'is-active': dropDownUser }">
             <div class="dropdown-trigger">
               <button class="button btnProfile" (click)="drpUser()">
-                <img class="iconsNav perfil" src="../../../assets/profile-demo/images.jfif" >
+                <img class="iconsNav perfil" src="../../../assets/profile-demo/avatar.jpg" >
                 <span class="btnArrow"> user
                     <img style="margin-left: 10px;" src="../../../assets/iconsSVG/arrow-down.svg" width="10">
                 </span>
@@ -59,10 +59,12 @@
                   <img class="iconsNav" src="../../../assets/iconsSVG/Asset 31.svg" >
                   View profile
                 </a>
+                <hr class="dropdown-divider">
                 <a href="#" class="dropdown-item" (click)="settingUser()">
                   <img class="iconsNav" src="../../../assets/iconsSVG/Asset 26.svg">
                   Settings
                 </a>
+                <hr class="dropdown-divider">
                 <a href="#" class="dropdown-item" (click)="logout()">
                   <img class="iconsNav" src="../../../assets/iconsSVG/Asset 19.svg">
                   Logout
@@ -74,13 +76,14 @@
         <!--  -->
         <div class="right-icons">
           <a class="itemIcons">
-            <img class="iconsNav" src="../../../assets/iconsSVG/notificacion.svg">
+            <!-- <img class="iconsNav" src="../../../assets/iconsSVG/notificacion.svg"> -->
+            <img class="iconsNav" src="../../../assets/iconsSVG/notify-01.svg">
             <div>
               <div class="notify">1</div>
             </div>          
           </a>
           <a class="itemIcons" 
-          style="background: url('../../../assets/profile-demo/images.jfif');background-size: 35px;">          
+          style="background: url('../../../assets/profile-demo/avatar.jpg');background-size: 32px;">          
           </a>
           <div class="dropdown is-right" [ngClass]="{ 'is-active': dropDownMenu }">
             <div class="dropdown-trigger">
@@ -95,10 +98,12 @@
                   <img class="iconsNav" src="../../../assets/iconsSVG/home-01.svg" >
                   Home
                 </a>
+                <hr class="dropdown-divider">
                 <a class="dropdown-item">
                   <img class="iconsNav" src="../../../assets/iconsSVG/noun_cc.svg" >
                   Opportunities
                 </a>
+                <hr class="dropdown-divider">
                 <a class="dropdown-item">
                   <img class="iconsNav" src="../../../assets/iconsSVG/people-01.svg" >
                   Connections

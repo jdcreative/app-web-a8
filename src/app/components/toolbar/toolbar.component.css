@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
 }
+/* .company{transition: all 0.5s } */
 .control{
     margin-top: auto;
     margin-bottom: auto;
@@ -23,7 +24,7 @@
 .searchInput{
     font-family: 'GothamMedium';
     font-size: 12px;    
-    width: 300px;   
+    width: 300px;      
 }
 
 /* level rigth */
@@ -72,8 +73,9 @@
     border:none !important;
 }
 .perfil{
-    width: 27px !important;
-    border-radius: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
 }
 .btnArrow{
     display: flex;
@@ -103,7 +105,8 @@
     width: 30px;
     height: 30px;
     border-radius: 20px;
-    background: #D2244D;
+    /* background: #D2244D; */
+    border:1px solid #D2244D;
     margin: 0 11px 0 0px;
     display: flex;
     justify-content: center;

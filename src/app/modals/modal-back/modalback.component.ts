@@ -12,7 +12,7 @@ export class ModalbackComponent implements OnInit {
 
 
   @Input() isSlctImgBck: boolean
-  @Input() isSlctImgUser: boolean
+  // @Input() isSlctImgUser: boolean
   UserId: number = 22;
   imgBucket:any;
   ulrImg: any = '../../assets/profile-demo/backDefect.jpg';
