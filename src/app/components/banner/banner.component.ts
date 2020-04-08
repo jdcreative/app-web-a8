@@ -17,7 +17,7 @@ export class BannerComponent implements OnInit {
   isUserTipe:any;
   iseditBanner:boolean=false
   ulrImg: any = '../../assets/profile-demo/BckDefect.jpg';
-  imgUser: any = '../../assets/profile-demo/profile.jfif';
+  imgUser: any = '../../assets/profile-demo/avatar.jpg';
   
   
   constructor() { }
@@ -29,6 +29,9 @@ export class BannerComponent implements OnInit {
   SlctImg(){
     this.isSlctImgBck = !this.isSlctImgBck;        
   }  
+  SlctImgPofile(){
+    this.isSlctImgUser=!this.isSlctImgUser;
+  }
   
 
 }

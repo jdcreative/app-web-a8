@@ -1,8 +1,19 @@
 <!-- firs actionBar -->
 <div *ngIf="aBComplete" class="level levelActionbar">
+    <!-- btn responsive -->
+    <div>
+        <div class="editPr2">
+            <a class="btnEditP2">
+                <div class="imgbtnEditP">
+                    <img class="imgBtnEditP" src="../../../assets/iconsSVG/editar.svg" width="16">
+                </div>
+                <div class="textBtnEditP">EDIT PROFILE</div>
+            </a>
+        </div>
+    </div>
     <!-- left -->
     <div class="level-left">
-        <div class="level-item" style="margin: 0 20px 0 65px;">
+        <div class="level-item contentbtnAbar">
             <a class="btnsActionbar">
                 <div class="iconBtnActionbar">
                     <img class="imgBtnActionbar" src="../../../assets/iconsSVG/dinero.svg">
@@ -36,7 +47,7 @@
         <div class="level-item item-redes">
             <a href=""><img src="../../../assets/iconsSVG/Asset 16.png"></a>
         </div>
-        <div class="level-item" style="margin: 0 60px 0 70px;">
+        <div class="level-item editPr">
             <a class="btnEditP">
                 <div class="imgbtnEditP">
                     <img class="imgBtnEditP" src="../../../assets/iconsSVG/editar.svg" width="16">
@@ -51,25 +62,30 @@
 <div  *ngIf="aBEditMode" class="level levelActionbar">
     <!-- left -->
     <div>
-        <div class="levelLeft">
-            <div class="actionbarPorcent">
-                <p class="parrafActionbar">Complete your profile: <strong style="color: #D2244D;"> 63%</strong></p>
-                <div>
-                    <img class="imgProgress" src="../../../assets/iconsSVG/pregunta.svg" width="14">
+        <div class="level-Left">
+            <div class="contentInfo">
+                <div class="infoActionbar">
+                    <div class="actionbarPorcent">
+                        <p class="parrafActionbar">Complete your profile: <strong style="color: #D2244D;"> 63%</strong></p>
+                        <div>
+                            <img class="imgProgress" src="../../../assets/iconsSVG/pregunta.svg" width="14">
+                        </div>
+                    </div>
+                    <div class="actionbarAddInfo">
+                        <p class="parrafActionbar">Next:<strong style="color: #D2244D;">Add your profile description</strong>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="actionbarAddInfo">
-                <p class="parrafActionbar">Next:<strong style="color: #D2244D;">Add your profile description</strong>
-                </p>
-            </div>
+                <div class="progress">
+                    <progress class="progressActionbar" value="63" max="100"></progress>
+                </div>
+            </div>            
         </div>
-        <div class="progress">
-            <progress class="progressActionbar" value="63" max="100"></progress>
-        </div>
+        
     </div>
 
     <!-- right -->
-    <div class="levelright">
+    <div class="level-right">
         <div class="divActionbarbtn">
             <button class="button btnCancelActionbar">CANCEL</button>
         </div>
@@ -81,6 +97,13 @@
 
 <!-- third actionBar -->
 <div *ngIf="aBNotConn" class="level levelActionbar">
+    <div>
+        <div class="itemConnect2">
+            <a class="btnConnectActionbar2">
+                <div class="conectActionbar">CONNECT</div>
+            </a>
+        </div>
+    </div>
     <div class="level-left">
         <div class="level-item paraffConnect">
             <p class="parrafStarsActionbar">22 complete projects</p>
@@ -118,11 +141,28 @@
 
 <!-- quarter actionBar -->
 <div *ngIf="aBConn" class="level levelActionbar">
+    <!-- btn responsive -->
+    <div class="responsiveNotify">     
+        <div class="item2">
+            <a href="" style="display: flex;">
+                <div class="notificationActionbar"><p>1</p></div>
+                <div class="messageActionbar">
+                    <img src="../../../assets/iconsSVG/charlar.png" width="22">
+                </div>
+            </a>
+        </div>   
+        <div class="itemUnfollow2">
+            <a class="btnnfollowActionbar2">
+                <div class="unfollowActionbar">UNFOLLOW</div>
+            </a>
+        </div>
+    </div>
+
     <div class="level-left">
-        <div class="level-item" style="margin: 0 20px 0 65px;">
+        <div class="level-item contParrafStar">
             <p class="parrafStarsActionbar">22 complete projects</p>
         </div>
-        <div class="level-item" style="margin: 0 45px;">
+        <div class="level-item contStarReviews">
             <div>
                 <img class="starReviewsActionbar" src="../../../assets/iconsSVG/estrella.svg" width="20">
             </div>
