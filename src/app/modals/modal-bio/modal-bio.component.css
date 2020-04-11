@@ -1,4 +1,5 @@
 .box{border-radius: 4px;}
+.modal-content{width:450px}
 .alert{
     color:rgba(210,36,77,1);
     /* margin-top: -25px; */
@@ -18,4 +19,11 @@
     font-family: 'GothamMedium';
     outline: none;
     border: none;
+}
+p{
+    font-family: 'GothamMedium';
+    font-size: 12px;
+}
+@media screen and (max-width:480px){
+    .modal-content{width:358px; overflow: initial;}
 }

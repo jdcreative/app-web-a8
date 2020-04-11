@@ -1,4 +1,5 @@
 .box{border-radius: 4px;}
+.modal-content{width:450px}
 .butons, .labelBtnSlct{
     display: flex;
     justify-content: center;
@@ -11,3 +12,6 @@
 }
 .modalUpload{text-align: center; font-size: 16px; font-family: 'GothamLight';}
 .file-label{font-family: 'GothamBold'; font-size: 12px;}
+@media screen and (max-width:480px){
+    .modal-content{width:358px; overflow: initial;}
+}
