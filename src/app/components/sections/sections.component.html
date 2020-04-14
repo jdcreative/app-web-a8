@@ -1,4 +1,23 @@
-<div class="cont">    
-    <app-about-section class="about"></app-about-section>
+<!-- tab-mobile -->
+<div class="tabs">
+    <ul>                
+        <li [ngClass]="{'is-active': slectd}"><a (click)="tagSect(true)">About</a></li>
+        <li [ngClass]="{'is-active': !slectd}"><a (click)="tagSect(false)">Projects</a></li>
+    </ul>
+</div>
+<div [hidden]="! slectd" class="contAbout">
+    <app-about-section class="a"></app-about-section>
+</div>
+<div [hidden]="slectd" class="contAbout">
+    <app-projects class="b"></app-projects>
+</div>
+
+<!-- desktop -->
+<div class="cont">
+    <div class="cont-left">
+        <app-about-section class="about"></app-about-section>
+        <app-projects class="projects"></app-projects>
+    </div>
+    
     <app-profile-boxes class="profile"></app-profile-boxes>
 </div>

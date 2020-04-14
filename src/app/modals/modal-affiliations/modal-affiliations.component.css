@@ -35,6 +35,13 @@ input:focus{
     font-family: 'GothamMedium';
 }
 .stco{color:#D2244D}
+select{
+    appearance: none;
+    background: url(../../../assets/iconsSVG/arrow-down.svg) no-repeat 95% center;
+    background-size: 13px;
+    height: 42px;   
+    background-color: white; 
+}
 .selectElmnt{
     width: 100%;
     border: 2px solid #828282;
@@ -50,6 +57,7 @@ input:focus{
 .selectElmnt:focus + .lavelSlct{
     top:-65px
 }
+option{line-height: 10px; padding: 10px;}
 .lavelSlct{
     position: relative;
     top: -32px;

@@ -17,7 +17,7 @@ export class ModalbackComponent implements OnInit {
   imgBucket:any;
   ulrImg: any = '../../assets/profile-demo/backDefect.jpg';
   urlFile: any = '';
-croppedImage: any;
+  croppedImage: any;
   public blobFile;
   constructor() { }
 

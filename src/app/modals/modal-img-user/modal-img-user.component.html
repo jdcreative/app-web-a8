@@ -1,0 +1,43 @@
+<div *ngIf="isSlctImgUser" class="modal is-active">
+    <div class="modal-background" (click)="slctImgUser(false)"></div>
+    <div class="modal-content">
+        <div class="box">
+            <h4 class="modalUpload">Please Upload document only in 'png', 'jpeg', 'jpg' format
+            </h4>
+            <div class="box">
+                <label class="file-label labelBtnSlct">
+                    <input class="file-input" type="file" id="file-input" accept="image/*"
+                        (change)="getImgLocal($event)">                   
+
+                    <span class="file-cta btnS">
+                        <span class="file-icon">
+                            <img src="../../../assets/iconsSVG/Asset 9.svg">
+                        </span>
+                        <span class="file-label">
+                            CHOOSE A FILE...
+                        </span>
+                    </span>
+                </label>
+                <hr>
+                <div class="img-container">
+                    <image-cropper                                        
+                    [imageChangedEvent]="urlFile" 
+                    [maintainAspectRatio]="true"
+                    [resizeToWidth]="256"
+                    [aspectRatio]="4 / 3" format="png"                   
+                    [hideResizeSquares]="true"                                        
+                    (imageCropped)="imageCropped($event)"            
+                    >
+                </image-cropper>                    
+                </div>
+                <!-- <div class="img-container">
+                    <img [src]="croppedImageUser ? croppedImageUser: urlImgUser">
+                </div> -->
+                <hr>
+                <div class="butons">
+                    <button class="button btnS is-danger" (click)="slctImgUser(false)">CLOSE</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

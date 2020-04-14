@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, HostListener} from '@angular/core';
 import { Router } from '@angular/router'
 
 
@@ -12,6 +12,13 @@ export class ToolbarComponent implements OnInit {
   dropDownUser: boolean = false;
   dropDownNotify: boolean = false;
   dropDownMenu: boolean = false;
+  @HostListener('document:click', ['$event']) clickout(e) {     
+    if( e.x <=167 || e.y >=284){if(this.dropDownMenu==true){this.dropDownMenu=false}}
+    if( e.x <=1083 || e.y >=198){if(this.dropDownUser==true){this.dropDownUser=false}}
+    if( e.x >=1281 || e.y >=198){if(this.dropDownUser==true){this.dropDownUser=false}}
+    if( e.x <=1022 || e.y >=145){if(this.dropDownNotify==true){this.dropDownNotify=false}}
+    if( e.x >=1224 || e.y >=145){if(this.dropDownNotify==true){this.dropDownNotify=false}}
+  }
   constructor(
     public router:Router
   ) { }
@@ -36,12 +43,11 @@ export class ToolbarComponent implements OnInit {
 
   drpNotify(){
     this.dropDownNotify=!this.dropDownNotify;
+    if(this.dropDownUser==true){this.dropDownUser=false;}
   }
   drpUser(){
     this.dropDownUser=!this.dropDownUser;
-    // setTimeout(() => {
-    //   this.dropDownUser=false;
-    // }, 1000);
+    if(this.dropDownNotify==true){this.dropDownNotify=false;}
   }
   drpMenu(){
     this.dropDownMenu=!this.dropDownMenu;    

@@ -27,6 +27,8 @@ import { ModalAffiliationsComponent } from './modals/modal-affiliations/modal-af
 import { ModalEducationComponent } from './modals/modal-education/modal-education.component';
 import { ModalGearComponent } from './modals/modal-gear/modal-gear.component';
 import { ModalServicesComponent } from './modals/modal-services/modal-services.component';
+import { ProjectsComponent } from './components/sections/projects/projects.component';
+import { ModalImgUserComponent } from './modals/modal-img-user/modal-img-user.component';
 
 
 
@@ -47,7 +49,9 @@ import { ModalServicesComponent } from './modals/modal-services/modal-services.c
     ModalAffiliationsComponent,
     ModalEducationComponent,
     ModalGearComponent,
-    ModalServicesComponent,    
+    ModalServicesComponent,
+    ProjectsComponent,
+    ModalImgUserComponent,    
   ],
   imports: [
     FormsModule,

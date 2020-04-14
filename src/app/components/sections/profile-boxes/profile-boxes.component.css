@@ -27,10 +27,6 @@
     text-align: center;
     margin: 0 10px;    
 }
-.prices{
-    margin-top: -18px;
-    margin-right: -15px;
-}
 .add{
     display: flex;
     align-items: center;
@@ -47,7 +43,7 @@
     border: 1px solid #828282;
     outline: none;
 }
-.sl{margin-right: -24px;}
+.sl{margin-right: -26px;}
 .slct{
     width: 56px;
     border: none;
@@ -56,6 +52,8 @@
     text-align: center;
     color: #4A4A4A;
     outline: none;
+    appearance: none;
+    background: white;
 }
 .editService{
     margin-left: 5px;
@@ -67,7 +65,8 @@
     font-size: 12px;
     font-family: 'GothamMedium';
     text-align: center;
-    color: black;    
+    color: black;  
+    background: #E6E9EC !important;  
 }
 .footerCard{
     font-family: 'GothamMedium';
@@ -111,4 +110,7 @@ small{
     margin-left: 15px;
     font-family: 'GothamMedium';
     min-width: -webkit-fill-available;
+}
+@media screen and (max-width:395px){
+    .prices{margin-top: -20px;}
 }

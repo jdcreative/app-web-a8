@@ -1,0 +1,45 @@
+<div *ngIf="stateUser" class="head1">
+    <a class="button btn">
+        <img src="../../../../assets/iconsSVG/more.svg" width="">
+    </a>
+    <div class="title1">
+        <h3>PROJECTS</h3>
+        <p>Click the + button to add new project</p>
+    </div>
+</div>
+<div *ngIf="!stateUser" class="head1">
+    <a class="button btn">
+        <img src="../../../../assets/iconsSVG/menu.svg" width="">
+    </a>
+    <div class="title1">
+        <h3>PROJECTS</h3>
+        <p>View my work and teams</p>
+    </div>
+</div>
+<div class="bodyProyect">
+    <div class="lifeline">
+        <img class="oval1" src="../../../../assets/iconsSVG/ovalcopy.svg" width="10">
+        <img class="oval2" src="../../../../assets/iconsSVG/ovalcopy.svg" width="10">
+    </div>
+    <div class="teams">
+        <div *ngFor="let item of items" class="team card">
+            <div class="card-content">
+                <img src="../../../../assets/profile-demo/descarga.jfif" width="100%">
+            </div>
+            <div class="card-footer line1">
+                <div class="content1">
+                    <h3 class="title">{{item.title}}</h3>
+                    <h5 class="subtitle">{{item.subtitle}}</h5>
+                </div>
+                <div class="content2">
+                    <a class="heart">
+                        <img src="../../../../assets/iconsSVG/loveicon.svg">
+                    </a>
+                    <h3 class="likes">{{item.likes}}</h3>
+                </div>
+            </div>
+            <div class="card-footer line2"></div>
+        </div>
+    </div>
+
+</div>
