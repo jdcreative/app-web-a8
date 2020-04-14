@@ -55,18 +55,18 @@
             </div>
             <div class="dropdown-menu" role="menu">
               <div class="dropdown-content">
-                <a class="dropdown-item"  (click)="home()">
-                  <img class="iconsNav" src="../../../assets/iconsSVG/Asset 31.svg" >
+                <a class="dropdown-item item-modal"  (click)="home()">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/user.svg" >
                   View profile
                 </a>
                 <hr class="dropdown-divider">
-                <a href="#" class="dropdown-item" (click)="settingUser()">
-                  <img class="iconsNav" src="../../../assets/iconsSVG/Asset 26.svg">
+                <a class="dropdown-item item-modal" (click)="settingUser()">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/settings.svg">
                   Settings
                 </a>
                 <hr class="dropdown-divider">
-                <a href="#" class="dropdown-item" (click)="logout()">
-                  <img class="iconsNav" src="../../../assets/iconsSVG/Asset 19.svg">
+                <a class="dropdown-item item-modal" (click)="logout()">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/logout.svg">
                   Logout
                 </a>
               </div>
@@ -94,19 +94,29 @@
             </div>
             <div class="dropdown-menu" role="menu">
               <div class="dropdown-content">
-                <a class="dropdown-item">
+                <a class="dropdown-item item-movil">
                   <img class="iconsNav" src="../../../assets/iconsSVG/home-01.svg" >
                   Home
                 </a>
                 <hr class="dropdown-divider">
-                <a class="dropdown-item">
+                <a class="dropdown-item item-movil">
                   <img class="iconsNav" src="../../../assets/iconsSVG/noun_cc.svg" >
                   Opportunities
                 </a>
                 <hr class="dropdown-divider">
-                <a class="dropdown-item">
+                <a class="dropdown-item item-movil">
                   <img class="iconsNav" src="../../../assets/iconsSVG/people-01.svg" >
                   Connections
+                </a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item item-movil" (click)="settingUser()">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/settings.svg">
+                  Settings
+                </a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item item-movil" (click)="logout()">
+                  <img class="iconsNav" src="../../../assets/iconsSVG/logout.svg">
+                  Logout
                 </a>
               </div>
             </div>

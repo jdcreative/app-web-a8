@@ -1,0 +1,110 @@
+.head1{
+    display: flex;    
+    align-items: baseline;
+}
+.title1{
+    display: block;
+    margin-left: 10px;
+}
+.btn{
+    border-radius: 20px;
+    width: 40px;
+    background: #D2244D;
+    border:none;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+h3{
+    font-family: 'GothamMedium';
+    font-size: 22px;
+}
+p{
+    font-family: 'GothamBlack';
+    font-size: 12px;
+}
+.bodyProyect{
+    display: flex;
+}
+.lifeline{
+    border-left: 2px solid #D8D8D8;
+    /* position: absolute; */
+    /* height: 815px; */
+    display: table-header-group;
+    /* display: inline-table; */
+    margin-left: 19px;
+    margin-top: -12px;
+}
+.teams{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+.team{
+    width: 350px;
+    /* height: 370px; */
+    border-radius: 4px;
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.3);
+    margin: 12px;
+    transition: .2s all;
+}
+.card-content{
+    padding: 0;
+}
+.line1{
+    display: flex;
+    justify-content: center;
+}
+.content1{
+    margin: 3px auto 3px 18px;
+}
+.content2{
+    display: flex;
+    margin: 3px 18px 3px 0;
+}
+.title{
+    font-family: 'GothamMedium';
+    font-size: 14px;
+    color: #333333;
+}
+.subtitle{
+    font-family: 'GothamLight';
+    font-size: 12px;
+    color: #A0B2B8;
+}
+.heart{
+    width: 34px;
+    height: 34px;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid #E6F0F2;
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+    transition: .4s all;
+}
+.heart:active{
+    background: #D2244D;    
+}
+.likes{
+    font-family: 'GothamLight';
+    font-size: 12px;
+    color: #A0B2B8;
+    align-items: center;
+    display: flex;
+}
+/* .team:hover{
+    transform: rotateY(180deg)
+} */
+
+
+.oval1{
+    margin-top: 150px;
+    margin-left: -6px;
+    position: absolute;
+}
+.oval2{
+    margin-top: 570px;
+    margin-left: -6px;
+    position: absolute;
+}

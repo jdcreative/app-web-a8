@@ -56,6 +56,7 @@
     width: 15px;
     font-weight: bold;
     margin: 0 8px;
+    /* font-family: 'GothamMedium'; */
 }
 .button{
     border:none;
@@ -100,6 +101,14 @@
 .right-icons{
     display: none;
     align-items: center;
+}
+.item-movil, .item-modal{
+    font-family: 'GothamMedium';
+    background-color: white;
+    font-size: 12px;
+}
+.item-movil:hover, .item-modal:hover{    
+    background-color: whitesmoke;
 }
 .itemIcons{
     width: 30px;

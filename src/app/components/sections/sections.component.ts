@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionsComponent implements OnInit {
 
+  slectd:boolean=true;
   constructor() { }
 
   ngOnInit() {
   }
+  tagSect(e){
+    this.slectd = e;
+  }
+
 
 }

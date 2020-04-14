@@ -15,20 +15,26 @@
         </p>
     </div>
     <div class="hablities">
-        <h3 class="titles">Industry</h3>
-        <a *ngIf="!editMode" class="btn button">
-            <span>{{industrySlcted}}</span>
-        </a>
-        <select *ngIf="editMode" class="btn" [(ngModel)]="industrySlcted">
-            <option *ngFor="let element of industries" [value]="element">{{element}}</option>
-        </select>
-        <h3 class="titles">Focus</h3>
-        <a *ngIf="!editMode" class="btn button">
-            <span>{{focusSlcted}}</span>
-        </a>
-        <select *ngIf="editMode" class="btn" [(ngModel)]="focusSlcted">
-            <option *ngFor="let element of focucing" [value]="element">{{element}}</option>
-        </select>
+        <div class="selectHblties">
+            <h3 class="titles">Industry</h3>
+            <a *ngIf="!editMode" class="btn button">
+                <span>{{industrySlcted}}</span>
+            </a>
+            <select *ngIf="editMode" class="btn slct" [(ngModel)]="industrySlcted">
+                <option *ngFor="let element of industries" [value]="element">{{element}}</option>
+            </select>
+        </div>
+
+        <div class="selectHblties">
+            <h3 class="titles">Focus</h3>
+            <a *ngIf="!editMode" class="btn button">
+                <span>{{focusSlcted}}</span>
+            </a>
+            <select *ngIf="editMode" class="btn slct" [(ngModel)]="focusSlcted">
+                <option *ngFor="let element of focucing" [value]="element">{{element}}</option>
+            </select>
+        </div>
+
     </div>
     <div class="skills">
         <h3 class="titles">Skills</h3>

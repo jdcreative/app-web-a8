@@ -1,5 +1,4 @@
-.section1{
-    width:98%; 
+.section1{    
     margin-right: 20px; 
     border-radius: 4px; 
     box-shadow: 0 0 7px 0 rgba(0,0,0,0.3);    
@@ -27,9 +26,10 @@
     font-family: 'GothamMedium' !important;
     font-size: 12px !important;
     color: #575757 !important;
-    height: 37px;
+    height: 50px;
     overflow: hidden;
     cursor: pointer;
+    display: inline-table;
 }
 .show{
     overflow: visible;
@@ -42,7 +42,7 @@
    font-size: 11px;
    outline:none;
 }
-.hablities{
+.hablities, .selectHblties{
     display: flex;
     align-items: center;
 }
@@ -57,6 +57,12 @@
     cursor: inherit;
     outline: none;
     background: white;
+}
+.slct{
+    appearance: none;
+    background: url(../../../../assets/iconsSVG/arrow-down.svg) no-repeat 95% center;
+    background-size: 13px;
+    height: 30px;
 }
 .tags{
     margin-top: 6px;
@@ -89,5 +95,22 @@
     .aboutParraf{height: 90px !important;}
 }
 @media screen and (max-width:900px){
-    .aboutParraf{height: 40px !important;}
+    .aboutParraf{height: 50px !important;}
+    .section1{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+@media screen and (max-width:665px){
+    .aboutParraf{height: 70px !important;}
+    .selectHblties{display: block;}
+}
+@media screen and (max-width:530px){
+    .aboutParraf{height: 90px !important;}
+}
+@media screen and (max-width:400px){
+    .aboutParraf{height: 110px !important;}
+}
+@media screen and (max-width:375px){
+    .hablities{display: block ;}
 }
